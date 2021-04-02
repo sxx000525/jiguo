@@ -1,0 +1,48 @@
+.focus{
+    width:977px;
+    height: 230px;
+    position: relative;
+    overflow: hidden;
+    .box{
+        position: absolute;
+        left: 0;
+        padding: 0;
+        width: 3300px;
+        ul{
+            float: left;
+            width: 900px;
+            margin-left: 50px;
+            height: 230px;
+           li{
+            float: left;
+            width: 200px;
+            height: 230px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-right: 23px;
+           &:hover{
+               margin-right: 0;
+           }
+            img{
+                width: 100%;
+            }
+           }
+        }
+    }
+    button{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        border: 0;
+        outline: none;
+        cursor: pointer;
+        font: bold 100px 楷体;
+        background: transparent;
+        &.btn1{
+            left: 0;
+        }
+        &.btn2{
+            right: -3px;
+        }
+    }
+}
