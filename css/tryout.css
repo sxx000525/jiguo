@@ -1,0 +1,342 @@
+header .nav {
+  height: 75px;
+}
+header .nav .img {
+  float: left;
+  margin-top: 10px;
+}
+header .nav .img img {
+  height: 60px;
+}
+header .nav ul li {
+  float: left;
+  width: 100px;
+  height: 75px;
+  font-size: 18px;
+}
+header .nav ul li:first-of-type {
+  margin-left: 50px;
+}
+header .nav ul li .box {
+  position: relative;
+  transition: all 0.5s;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+}
+header .nav ul li .box .top1 {
+  color: #ff6700;
+}
+header .nav ul li .box:hover {
+  transform: rotateX(90deg);
+}
+header .nav ul li .box a {
+  color: #000;
+}
+header .nav ul li .box .top,
+header .nav ul li .box .bottom {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 75px;
+  font-weight: bold;
+}
+header .nav ul li .box .top {
+  transform: translateZ(30px);
+}
+header .nav ul li .box .bottom {
+  background-color: pink;
+  transform: translateY(17.5px) rotateX(-90deg);
+  color: #fff;
+}
+header .nav .zhuce {
+  float: right;
+  padding-top: 22px;
+}
+header .nav .zhuce button {
+  float: right;
+  background: transparent;
+  border: 1px solid #ff6700;
+  padding: 5px 10px;
+  border-radius: 5px;
+  outline: none;
+}
+header .nav .zhuce button a {
+  color: #ff6700;
+}
+header .nav .zhuce span {
+  display: inline-block;
+  width: 30px;
+  height: 38px;
+  line-height: 38px;
+  font-size: 25px;
+  margin-right: 30px;
+}
+header .nav .zhuce span a {
+  color: #333;
+}
+main .wrapper {
+  padding-top: 20px;
+}
+main .wrapper .main-l {
+  float: left;
+  color: #3a3a3a;
+  width: 740px;
+  padding-top: 10px;
+}
+main .wrapper .main-l .title {
+  border-left: 6px solid #FF0203;
+  padding-left: 15px;
+  height: 30px;
+  line-height: 30px;
+}
+main .wrapper .main-l h2 {
+  color: #FF0203;
+  font-size: 20px;
+  padding: 20px 0;
+}
+main .wrapper .main-l .img {
+  width: 100%;
+  margin: 15px 0 35px;
+}
+main .wrapper .main-l .jieshao h3 {
+  color: #207CC0;
+  font-size: 17px;
+}
+main .wrapper .main-l .jieshao img {
+  margin-bottom: 20px;
+}
+main .wrapper .main-l p {
+  font-size: 15px;
+  padding: 20px 0;
+}
+main .wrapper .main-l h5 {
+  color: #5abeec;
+  font-size: 17px;
+  margin-bottom: 20px;
+}
+main .wrapper .main-l dl {
+  margin-bottom: 20px;
+}
+main .wrapper .main-l dl h4 {
+  display: inline;
+  font-weight: 600;
+  color: #000;
+  font-family: 黑体;
+}
+main .wrapper .main-l dl dt {
+  font-weight: bold;
+  color: #FF0203;
+}
+main .wrapper .main-r {
+  float: right;
+  width: 235px;
+  margin-left: 25px;
+}
+main .wrapper .main-r .text {
+  border-left: 6px solid #FD513F;
+  padding-left: 20px;
+}
+main .wrapper .main-r .price {
+  width: 100%;
+}
+main .wrapper .main-r .price h4 {
+  color: #FF0203;
+  font-size: 32px;
+  padding: 15px 0;
+}
+main .wrapper .main-r .price button {
+  width: 100%;
+  height: 40px;
+  font-size: 16px;
+  background: #FE5341;
+  outline: none;
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+main .wrapper .main-r .price button a {
+  color: aliceblue;
+}
+main .wrapper .main-r .price p {
+  text-align: center;
+  padding: 10px 0;
+  color: #666;
+  font-size: 14px;
+}
+main .wrapper .main-r .img {
+  width: 100%;
+  margin: 15px 0;
+}
+main .wrapper .main-r .img img {
+  width: 100%;
+  height: 100%;
+}
+main .wrapper .main-r dl {
+  margin-bottom: 50px;
+}
+main .wrapper .main-r dl dt {
+  padding: 10px 0;
+  font-weight: bold;
+}
+main .wrapper .main-r dl dd {
+  font-size: 13px;
+  line-height: 1.7em;
+  color: #555;
+}
+main .wrapper .main-r .img2 {
+  margin-top: 20px;
+}
+main .nav_shop_apply {
+  width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+main .nav_shop_apply ul {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+main .nav_shop_apply ul li {
+  width: 220px;
+  height: 290px;
+  margin: 13px 0 35px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  position: relative;
+}
+main .nav_shop_apply ul li img {
+  width: 100%;
+  border-radius: 8px 8px 0 0;
+}
+main .nav_shop_apply ul li p {
+  padding: 5px;
+  margin-bottom: 5px;
+  font-size: 16px;
+  font-weight: 700;
+}
+main .nav_shop_apply ul li .shu {
+  display: inline-block;
+  width: 48px;
+  height: 25px;
+  border: 1px solid #ff0000;
+  color: #f00;
+  border-radius: 5px;
+}
+main .nav_shop_apply ul li .ren {
+  display: inline-block;
+  width: 48px;
+  height: 25px;
+  border: 1px solid #f00;
+  margin-right: 13px;
+}
+main .nav_shop_apply ul li .zi {
+  color: green;
+  border: 1px solid green;
+}
+main .nav_shop_apply ul li div {
+  margin: 12px 0;
+}
+main .nav_shop_apply ul li div span {
+  color: red;
+}
+main .nav_shop_apply ul li .number2 {
+  color: green;
+}
+main .nav_shop_apply ul li .number {
+  color: #f00;
+}
+main .nav_shop_apply ul li .firstIssue {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 22px;
+  line-height: 22px;
+  font-size: 14px;
+  color: #fff;
+  background: #ff4949;
+  border-radius: 0 8px 0 8px;
+}
+main .nav_shop_apply ul li .lastIssue {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 80px;
+  height: 22px;
+  line-height: 22px;
+  font-size: 14px;
+  color: #e7c931;
+  background: #F8F1CC;
+  border-radius: 0 8px 0 8px;
+}
+main .nav {
+  margin-top: 30px;
+}
+main .nav span:first-of-type {
+  float: left;
+  font-weight: bold;
+  font-size: 20px;
+}
+main .nav span:last-of-type {
+  float: right;
+  color: #f00;
+}
+footer {
+  width: 100%;
+  background: #505050;
+  font-size: 13px;
+  color: #a3a3a3;
+}
+footer a {
+  color: #a3a3a3;
+}
+footer a:hover {
+  color: coral;
+}
+footer .footer-box {
+  padding-top: 50px;
+}
+footer .footer-box .footer-img {
+  float: left;
+}
+footer .footer-box .footer-img1 {
+  margin-left: 15px;
+  float: left;
+  width: 130px;
+}
+footer .footer-box .footer-img1 div {
+  margin: 25px 0;
+}
+footer .footer-box .footer-img1 div p {
+  margin: 5px 0;
+}
+footer .footer-box dl {
+  float: left;
+  margin-left: 30px;
+}
+footer .footer-box dl dt {
+  font-size: 16px ;
+  color: #F9F9F9;
+  font-family: 黑体;
+}
+footer .footer-box dl dd {
+  line-height: 1.5em;
+}
+footer .footer-box dl dd:first-of-type {
+  margin-top: 30px;
+}
+footer .footer-box dl div {
+  float: left;
+}
+footer .footer-box dl div:last-of-type {
+  margin-left: 15px;
+}
+footer .footer-bottom {
+  text-align: center;
+  line-height: 30px;
+  margin-top: 70px;
+}
