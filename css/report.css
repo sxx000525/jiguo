@@ -123,23 +123,22 @@ main .section3 .wrapper {
 main .section2 .wrapper .main-l,
 main .section3 .wrapper .main-l {
   float: left;
-  width: 680px;
+  width: 678px;
 }
 main .section2 .wrapper .main-l img,
 main .section3 .wrapper .main-l img {
   width: 100%;
-  height: 377px;
+  border-radius: 5px;
 }
-main .section2 .wrapper .main-l .main-box,
-main .section3 .wrapper .main-l .main-box {
+main .section2 .wrapper .main-l .main-l-box .main-box,
+main .section3 .wrapper .main-l .main-l-box .main-box {
   position: relative;
   width: 100%;
-  height: 377px;
   border: 1px solid #ccc;
   border-radius: 5px;
 }
-main .section2 .wrapper .main-l .main-box .susu,
-main .section3 .wrapper .main-l .main-box .susu {
+main .section2 .wrapper .main-l .main-l-box .main-box .susu,
+main .section3 .wrapper .main-l .main-l-box .main-box .susu {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -150,36 +149,36 @@ main .section3 .wrapper .main-l .main-box .susu {
   background: rgba(255, 255, 255, 0.9);
   padding: 20px 15px;
 }
-main .section2 .wrapper .main-l .main-box .susu .susu-b,
-main .section3 .wrapper .main-l .main-box .susu .susu-b {
+main .section2 .wrapper .main-l .main-l-box .main-box .susu .susu-b,
+main .section3 .wrapper .main-l .main-l-box .main-box .susu .susu-b {
   width: 100%;
   margin-top: 31px;
 }
-main .section2 .wrapper .main-l .main-box .susu .susu-b .susu-l,
-main .section3 .wrapper .main-l .main-box .susu .susu-b .susu-l {
+main .section2 .wrapper .main-l .main-l-box .main-box .susu .susu-b .susu-l,
+main .section3 .wrapper .main-l .main-l-box .main-box .susu .susu-b .susu-l {
   float: left;
 }
-main .section2 .wrapper .main-l .main-box .susu .susu-b .susu-l img,
-main .section3 .wrapper .main-l .main-box .susu .susu-b .susu-l img {
+main .section2 .wrapper .main-l .main-l-box .main-box .susu .susu-b .susu-l img,
+main .section3 .wrapper .main-l .main-l-box .main-box .susu .susu-b .susu-l img {
   width: 30px;
   height: 30px;
   vertical-align: middle;
   border-radius: 50%;
 }
-main .section2 .wrapper .main-l .main-box .susu .susu-b .susu-l span,
-main .section3 .wrapper .main-l .main-box .susu .susu-b .susu-l span {
+main .section2 .wrapper .main-l .main-l-box .main-box .susu .susu-b .susu-l span,
+main .section3 .wrapper .main-l .main-l-box .main-box .susu .susu-b .susu-l span {
   margin: 0 5px;
 }
-main .section2 .wrapper .main-l .main-box .susu .susu-b .susu-l span:first-of-type,
-main .section3 .wrapper .main-l .main-box .susu .susu-b .susu-l span:first-of-type {
+main .section2 .wrapper .main-l .main-l-box .main-box .susu .susu-b .susu-l span:first-of-type,
+main .section3 .wrapper .main-l .main-l-box .main-box .susu .susu-b .susu-l span:first-of-type {
   color: #ff6700;
 }
-main .section2 .wrapper .main-l .main-box .susu .susu-b .susu-r,
-main .section3 .wrapper .main-l .main-box .susu .susu-b .susu-r {
+main .section2 .wrapper .main-l .main-l-box .main-box .susu .susu-b .susu-r,
+main .section3 .wrapper .main-l .main-l-box .main-box .susu .susu-b .susu-r {
   float: right;
 }
-main .section2 .wrapper .main-l .main-box .susu .susu-b .susu-r img,
-main .section3 .wrapper .main-l .main-box .susu .susu-b .susu-r img {
+main .section2 .wrapper .main-l .main-l-box .main-box .susu .susu-b .susu-r img,
+main .section3 .wrapper .main-l .main-l-box .main-box .susu .susu-b .susu-r img {
   width: 15px;
   height: 15px;
 }
@@ -187,7 +186,7 @@ main .section2 .wrapper .main-l .guanyu,
 main .section3 .wrapper .main-l .guanyu {
   width: 100%;
   text-align: center;
-  margin: 15px 0;
+  margin: 13px 0;
   border: 1px solid #ccc;
   border-radius: 5px;
   font-size: 14px;
@@ -199,6 +198,7 @@ main .section3 .wrapper .main-l .main-l-b {
   width: 100%;
   text-align: center;
   color: #ff6700;
+  margin: 30px;
 }
 main .section2 .wrapper .main-l .main-l-b img,
 main .section3 .wrapper .main-l .main-l-b img {

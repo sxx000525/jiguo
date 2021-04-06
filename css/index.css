@@ -361,6 +361,7 @@ main .index_kuwan .w ul li {
   border: 1px solid red;
   background: white;
   border-radius: 7px;
+  margin: 20px 0;
 }
 main .index_kuwan .w ul li img {
   width: 100%;
@@ -368,9 +369,9 @@ main .index_kuwan .w ul li img {
 }
 main .index_kuwan .w ul li h3 {
   margin-left: 6px;
+  font-size: 18px;
 }
 main .index_kuwan .w ul li p {
-  padding: 5px;
   margin-bottom: 5px;
   font-size: 14px;
   font-weight: 700;
@@ -383,7 +384,6 @@ main .index_kuwan .w ul li .dianping {
   height: 50px;
   color: #333;
   border-radius: 4px;
-  margin-top: 10px;
 }
 main .index_kuwan .w ul li .dianping .money {
   line-height: 50px;

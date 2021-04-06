@@ -1,0 +1,112 @@
+.section3 {
+  width: 100%;
+  background: #F7F7F7;
+  margin-top: 10px;
+}
+.section3 .wrapper {
+  padding-top: 30px;
+}
+.section3 .wrapper .main-l {
+  float: left;
+  width: 680px;
+}
+.section3 .wrapper .main-l img {
+  width: 100%;
+  height: 377px;
+}
+.section3 .wrapper .main-l .main-l-box .main-box {
+  position: relative;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.section3 .wrapper .main-l .main-l-box .main-box .susu {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 125px;
+  color: #3a3a3a;
+  box-sizing: border-box;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 20px 15px;
+}
+.section3 .wrapper .main-l .main-l-box .main-box .susu .susu-b {
+  width: 100%;
+  margin-top: 31px;
+}
+.section3 .wrapper .main-l .main-l-box .main-box .susu .susu-b .susu-l {
+  float: left;
+}
+.section3 .wrapper .main-l .main-l-box .main-box .susu .susu-b .susu-l img {
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+  border-radius: 50%;
+}
+.section3 .wrapper .main-l .main-l-box .main-box .susu .susu-b .susu-l span {
+  margin: 0 5px;
+}
+.section3 .wrapper .main-l .main-l-box .main-box .susu .susu-b .susu-l span:first-of-type {
+  color: #ff6700;
+}
+.section3 .wrapper .main-l .main-l-box .main-box .susu .susu-b .susu-r {
+  float: right;
+}
+.section3 .wrapper .main-l .main-l-box .main-box .susu .susu-b .susu-r img {
+  width: 15px;
+  height: 15px;
+}
+.section3 .wrapper .main-l .guanyu {
+  width: 100%;
+  text-align: center;
+  margin: 15px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  color: #555;
+  padding: 15px 0;
+}
+.section3 .wrapper .main-l .main-l-b {
+  width: 100%;
+  text-align: center;
+  color: #ff6700;
+  margin: 30px;
+}
+.section3 .wrapper .main-l .main-l-b img {
+  width: 25px;
+  height: 15px;
+  vertical-align: middle;
+}
+.section3 .wrapper .main-r {
+  float: right;
+  width: 295px;
+  margin-left: 25px;
+}
+.section3 .wrapper .main-r .text {
+  border-left: 6px solid #FD513F;
+  padding-left: 20px;
+}
+.section3 .wrapper .main-r .img {
+  width: 100%;
+  margin: 15px 0;
+}
+.section3 .wrapper .main-r .img img {
+  width: 100%;
+  height: 100%;
+}
+.section3 .wrapper .main-r dl {
+  margin-bottom: 50px;
+}
+.section3 .wrapper .main-r dl dt {
+  padding: 10px 0;
+  font-weight: bold;
+}
+.section3 .wrapper .main-r dl dd {
+  font-size: 13px;
+  line-height: 1.7em;
+  color: #555;
+}
+.section3 .wrapper .main-r .img2 {
+  margin-top: 20px;
+}

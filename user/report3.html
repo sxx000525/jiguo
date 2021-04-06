@@ -2,9 +2,9 @@
  * @Author: SXX
  * @Date: 2021-04-02 10:11:06
  * @LastEditors: Please set LastEditors
- * @LastEditTime: 2021-04-06 15:43:56
+ * @LastEditTime: 2021-04-06 15:14:01
  * @Description: file content
- * @FilePath: \极果\user\report.html
+ * @FilePath: \极果\user\report3.html
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -75,12 +75,12 @@
                     <p>体检报告</p>
                 </div>
                 <div class="text2">
-                    <span class="btn1 active">
-                        <a href="#">最新</a>
+                    <span class="btn1">
+                    <a href="../user/report.html">最新</a>
                     </span>
-                    <span class="btn2  ">
-                        <a href="../user/report3.html">最热</a>
-                    </span>
+                    <span class="btn2  active">
+                    <a href="#">最热</a>
+                </span>
                 </div>
             </div>
         </section>
@@ -88,28 +88,7 @@
             <div class="wrapper">
                 <div class="main-l clearfix">
                     <div class="main-l-box clearfix">
-                        <!-- <div class="main-box">
-                            <div class="main1">
-                                <img src="../img/bg8.jpg" alt="">
-                            </div>
-                            <div class="susu">
-                                <p>空气净化器里面的学问多得惊呆你，你选对了吗？</p>
-                                <div class="susu-b">
-                                    <span class="susu-l">
-                                <img src="../img/tx.jpg" alt="">
-                                <span>苏苏</span>
-                                    <span>2016-01-25</span>
-                                    </span>
-                                    <span class="susu-r">
-                                <span class="zan"><img src="../img/zan.png" alt="">3</span>
-                                    <span class="xinxi"><img src="../img/reply.png" alt="">3</span>
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="guanyu">
-                                关于格林威特空气净化器还有4篇报告,点击查看
-                            </div>
-                        </div> -->
+                       
                     </div>
 
                     <div class="main-l-b">
@@ -254,54 +233,51 @@
         </div>
     </footer>
     <!-- 脚注结束 -->
-    <!-- <script src="../js/report.js"></script> -->
     <script src="../js/ajax.js"></script>
     <script src="../js/doT.min.js"></script>
-    <!-- <script src="../js/report-s.js"></script> -->
     <script>
         ajax({
             type: 'get',
-            url: 'http://192.168.31.254:3000/report/hot',
-            success: function (result) {
+            url: 'http://192.168.31.254:3000/report/new',
+            success: function(result) {
                 console.log(result);
-                let arr1 = result.slice(5,);
-                let arr2 = [...arr1, ...arr1, ...arr1, ...arr1,]
+                let arr1 = result.slice(5, );
+                let arr2 = [...arr1, ...arr1, ...arr1, ...arr1, ]
                 var tmpText = doT.template(document.querySelector("#li_tmpl-lb").innerText);
                 document.querySelector(".main-l-box").innerHTML = tmpText(arr1)
-                console.log(document.querySelector(".main-l-box"));
             }
         })
     </script>
 
     <script id="li_tmpl-lb" type="text/x-dot-template">
         <!--doT.js独有语法 -->
-    <!-- 六 展示数据 -->
-    <!-- 将doT.json内对应的对象名写进去 -->
-    {{~it:value:index}}
-    <div class="main-box">
-        <div class="main1">
-            <img src="{{=value.img}}" alt="">
-        </div>
-        <div class="susu">
-            <p>{{=value.text}}</p>
-            <div class="susu-b">
-                <span class="susu-l">
+        <!-- 六 展示数据 -->
+        <!-- 将doT.json内对应的对象名写进去 -->
+        {{~it:value:index}}
+        <div class="main-box">
+            <div class="main1">
+                <img src="{{=value.img}}" alt="">
+            </div>
+            <div class="susu">
+                <p>{{=value.text}}</p>
+                <div class="susu-b">
+                    <span class="susu-l">
                     <img src="../img/tx.jpg" alt="">
                     <span>苏苏</span>
                     <span>2016-01-25</span>
-                </span>
-                <span class="susu-r">
+                    </span>
+                    <span class="susu-r">
                     <span class="zan">
                         <img src="../img/zan.png" alt="">3</span>
                     <span class="xinxi"><img src="../img/reply.png" alt="">3</span>
-                </span>
+                    </span>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="guanyu">
-        关于格林威特空气净化器还有4篇报告,点击查看
-    </div>
-    {{~}}
+        <div class="guanyu">
+            关于格林威特空气净化器还有4篇报告,点击查看
+        </div>
+        {{~}}
     </script>
 
 </body>
