@@ -83,6 +83,348 @@ header .header-main {
   height: 300px;
   margin-top: 10px;
   background: url(../img/original.jpg) no-repeat center center;
+  background-size: 100%;
+}
+main .index_hot {
+  width: 100%;
+}
+main .index_hot .w {
+  width: 1000px;
+  margin: 0 auto;
+  border: 1px solid red;
+}
+main .index_hot .w h2 {
+  margin: 25px 0 25px 15px;
+}
+main .index_hot .w > span:nth-of-type(1) {
+  float: left;
+  margin-left: -60px;
+  margin-top: 150px;
+}
+main .index_hot .w > span:nth-of-type(2) {
+  float: right;
+  margin-right: -60px;
+  margin-top: 150px;
+}
+main .index_hot .w .hot {
+  overflow: hidden;
+}
+main .index_hot .w .hot ul {
+  width: 10000px;
+}
+main .index_hot .w .hot ul li {
+  float: left;
+  width: 220px;
+  height: 290px;
+  margin: 0 15px;
+  text-align: center;
+  border: 1px solid #e7e6e6;
+  border-radius: 7px;
+}
+main .index_hot .w .hot ul li img {
+  width: 100%;
+  border-radius: 7px;
+}
+main .index_hot .w .hot ul li p {
+  padding: 5px;
+  margin-bottom: 5px;
+  font-size: 16px;
+  font-weight: 700;
+}
+main .index_hot .w .hot ul li > span {
+  color: red;
+  margin: 5px;
+  padding: 5px 10px;
+  border: 1px solid red;
+  border-radius: 4px;
+}
+main .index_hot .w .hot ul li div {
+  margin: 13px;
+  font-size: 16px;
+}
+main .index_hot .w .hot ul li div span {
+  color: red;
+}
+main .index_hot .w .hot ul li div:nth-of-type(2) {
+  margin: 13px;
+  font-size: 16px;
+  color: red;
+}
+main .index_report {
+  width: 100%;
+  background: #f7f7f7;
+}
+main .index_report .w {
+  width: 1000px;
+  margin: 0 auto;
+}
+main .index_report .w h2 {
+  margin: 25px 0 25px 15px;
+  padding-top: 20px;
+}
+main .index_report .w ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+main .index_report .w ul li {
+  width: 220px;
+  height: 235px;
+  margin: 0 15px 20px;
+  border-radius: 7px;
+  background: white;
+}
+main .index_report .w ul li img {
+  border-radius: 7px 7px 0 0;
+  width: 100%;
+}
+main .index_report .w ul li p {
+  padding: 5px;
+  margin-bottom: 5px;
+  font-size: 16px;
+  font-weight: 700;
+}
+main .index_report .w ul li .dianping {
+  border: 1px solid red;
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 50px;
+  color: #333;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+main .index_report .w ul li .dianping .index_name {
+  line-height: 50px;
+  margin-left: 6px;
+}
+main .index_report .w ul li .dianping .dianzan img:nth-of-type(1) {
+  position: absolute;
+  bottom: 18px;
+  right: 35px;
+  width: 15px;
+  height: 16px;
+}
+main .index_report .w ul li .dianping .dianzan img:nth-of-type(2) {
+  position: absolute;
+  bottom: 20px;
+  right: 35px;
+  display: none;
+  width: 15px;
+  height: 16px;
+}
+main .index_report .w ul li .dianping .dianzan span {
+  position: absolute;
+  bottom: 20px;
+  right: 60px;
+  width: 15px;
+  height: 16px;
+}
+main .index_report .w ul li .dianping .pinglun img {
+  position: absolute;
+  bottom: 18px;
+  right: 80px;
+  width: 15px;
+  height: 16px;
+}
+main .index_report .w ul li .dianping .pinglun span {
+  position: absolute;
+  bottom: 20px;
+  right: 15px;
+  width: 15px;
+  height: 16px;
+}
+main .index_guide {
+  width: 100%;
+}
+main .index_guide .w {
+  width: 1000px;
+  border: 1px solid red;
+  margin: 0 auto;
+}
+main .index_guide .w h2 {
+  margin: 25px 0 25px 15px;
+}
+main .index_guide .w ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+main .index_guide .w ul li {
+  width: 220px;
+  height: 235px;
+  margin: 0 13px 30px;
+  border-radius: 7px;
+  background: white;
+  border: 1px solid #dfdcdc;
+}
+main .index_guide .w ul li img {
+  border-radius: 7px 7px 0 0;
+  width: 100%;
+}
+main .index_guide .w ul li p {
+  padding: 5px;
+  margin-bottom: 5px;
+  font-size: 16px;
+  font-weight: 700;
+}
+main .index_guide .w ul li .dianping {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 50px;
+  color: #333;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+main .index_guide .w ul li .dianping .index_name {
+  line-height: 50px;
+  margin-left: 6px;
+}
+main .index_guide .w ul li .dianping .dianzan img:nth-of-type(1) {
+  position: absolute;
+  bottom: 18px;
+  right: 35px;
+  width: 15px;
+  height: 16px;
+}
+main .index_guide .w ul li .dianping .dianzan img:nth-of-type(2) {
+  position: absolute;
+  bottom: 20px;
+  right: 35px;
+  display: none;
+  width: 15px;
+  height: 16px;
+}
+main .index_guide .w ul li .dianping .dianzan span {
+  position: absolute;
+  bottom: 20px;
+  right: 60px;
+  width: 15px;
+  height: 16px;
+}
+main .index_guide .w ul li .dianping .pinglun img {
+  position: absolute;
+  bottom: 18px;
+  right: 80px;
+  width: 15px;
+  height: 16px;
+}
+main .index_guide .w ul li .dianping .pinglun span {
+  position: absolute;
+  bottom: 20px;
+  right: 15px;
+  width: 15px;
+  height: 16px;
+}
+main .index_guide .w ul li .bian1 {
+  width: 90%;
+  margin-top: -45px;
+  margin: 0 auto;
+  padding-bottom: 5px;
+  border: 1px solid #dfdcdc;
+  border-top: 0;
+  border-radius: 0 0 15px 15px;
+}
+main .index_guide .w ul li .bian2 {
+  width: 80%;
+  margin-top: -45px;
+  margin: 0 auto;
+  padding-bottom: 5px;
+  border: 1px solid #dfdcdc;
+  border-top: 0;
+  border-radius: 0 0 15px 15px;
+}
+main .index_kuwan {
+  width: 100%;
+  border: 1px solid #f7f7f7;
+  background: #f7f7f7;
+}
+main .index_kuwan .w {
+  width: 1000px;
+  margin: 0 auto;
+}
+main .index_kuwan .w h2 {
+  margin: 25px 0 25px 15px;
+}
+main .index_kuwan .w ul {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 0 30px 0;
+}
+main .index_kuwan .w ul li {
+  width: 220px;
+  height: 230px;
+  border: 1px solid red;
+  background: white;
+  border-radius: 7px;
+}
+main .index_kuwan .w ul li img {
+  width: 100%;
+  border-radius: 7px 7px 0 0;
+}
+main .index_kuwan .w ul li h3 {
+  margin-left: 6px;
+}
+main .index_kuwan .w ul li p {
+  padding: 5px;
+  margin-bottom: 5px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #666;
+}
+main .index_kuwan .w ul li .dianping {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 50px;
+  color: #333;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+main .index_kuwan .w ul li .dianping .money {
+  line-height: 50px;
+  color: red;
+  margin-left: 6px;
+}
+main .index_kuwan .w ul li .dianping .dianzan img:nth-of-type(1) {
+  position: absolute;
+  bottom: 18px;
+  right: 35px;
+  width: 15px;
+  height: 16px;
+}
+main .index_kuwan .w ul li .dianping .dianzan img:nth-of-type(2) {
+  position: absolute;
+  bottom: 20px;
+  right: 35px;
+  display: none;
+  width: 15px;
+  height: 16px;
+}
+main .index_kuwan .w ul li .dianping .dianzan span {
+  position: absolute;
+  bottom: 20px;
+  right: 60px;
+  width: 15px;
+  height: 16px;
+}
+main .index_kuwan .w ul li .dianping .pinglun img {
+  position: absolute;
+  bottom: 18px;
+  right: 80px;
+  width: 15px;
+  height: 16px;
+}
+main .index_kuwan .w ul li .dianping .pinglun span {
+  position: absolute;
+  bottom: 20px;
+  right: 15px;
+  width: 15px;
+  height: 16px;
 }
 footer {
   width: 100%;
@@ -90,6 +432,7 @@ footer {
   background: #505050;
   font-size: 13px;
   color: #a3a3a3;
+  clear: both;
 }
 footer a {
   color: #a3a3a3;
@@ -119,7 +462,7 @@ footer .footer-box dl {
   margin-left: 30px;
 }
 footer .footer-box dl dt {
-  font-size: 16px ;
+  font-size: 16px;
   color: #F9F9F9;
   font-family: 黑体;
 }
