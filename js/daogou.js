@@ -19,6 +19,7 @@ ajax({
 
     }
 })
+
 ajax({
     type: 'get',
     url: 'http://192.168.31.254:3000/report/hot',
@@ -30,5 +31,16 @@ ajax({
         console.log(arr6)
         var tmpText = doT.template(document.getElementById('li_tmpl-y2').innerText);
         document.querySelector('#ul2').innerHTML = tmpText(arr5);
+    }
+})
+ajax({
+    type: 'get',
+    url: 'http://192.168.31.254:3000/report/hot',
+    success: function(result) {
+        console.log(result);
+        let arr7 = result.slice(0, 16);
+        let arr8 = [...arr7, ...arr7, ...arr7, ...arr7, ]
+        var tmpText = doT.template(document.querySelector("#li_tmpl-lb").innerText);
+        document.querySelector(".index_kuwan>.w>ul").innerHTML = tmpText(arr7)
     }
 })

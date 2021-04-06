@@ -2,7 +2,7 @@
  * @Author: SXX
  * @Date: 2021-03-31 16:22:02
  * @LastEditors: SXX
- * @LastEditTime: 2021-04-06 17:40:26
+ * @LastEditTime: 2021-04-06 19:45:15
  * @Description: file content
  * @FilePath: \极果\user\index.html
 -->
@@ -65,13 +65,25 @@
                 <span class="iconfont"><a href="#">&#xe618;</a></span>
             </div>
         </div>
-        <!-- 主页轮播图 -->
-        <!-- <div class="header-main">
-            <div class="header-img wrapper">
+        <div class="banner1">
+            <div class=" w">
+                <div class="details">
+                    <h1>幻想小贝HiFi2.1音箱</h1>
+                    <ul>
+                        <li>126申请</li>
+                        <li>￥599</li>
+                        <li>20台</li>
+                    </ul>
+                    <p>申请时间剩余：<span id="times">13天</span></p>
+                    <button>立即申请</button>
+                </div>
             </div>
-        </div>   -->
-    </header>
+            <!-- <img src="../image/original.jpg" alt=""> -->
 
+
+        </div>
+    </header>
+    <!-- 焦点图 -->
     <!--  主体-->
     <main>
         <div class="main">
@@ -106,22 +118,6 @@
                     <h2>报告精选</h2>
                     <div class="report">
                         <ul id="ul2">
-                            <!-- <li>
-                                <img src="../img/k1.jpg" alt="">
-                                <p>巴慕达 The Toaster 烤面包机</p>
-                                <div class="dianping">
-                                    <span class="index_name">• 苏苏</span>
-                                    <div class="dianzan">
-                                        <img src="../img/reply.png" alt="">
-                                        <span>3</span>
-                                    </div>
-                                    <div class="pinglun">
-                                        <img src="../img/xinRedo.png" alt="">
-                                        <span>3</span>
-                                    </div>
-                                </div>
-
-                            </li> -->
                             <script id="li_tmpl-y2" type="text/x-dot-template">
                                 <!--doT.js独有语法 -->
                                 <!-- 六 展示数据 -->
@@ -134,20 +130,17 @@
                                         <span class="index_name">• 苏苏</span>
                                         <div class="dianzan">
                                             <img src="../img/reply.png" alt="">
-                                            <span>3</span>
+                                            <span class="num">3</span>
                                         </div>
                                         <div class="pinglun">
-                                            <img src="../img/xinRedo.png" alt="">
+                                            <img src="../img/zan.png" alt="">
                                             <span>3</span>
                                         </div>
                                     </div>
                                 </li>
                                 {{~}}
                             </script>
-                            <li>2</li>
-                            <li>3</li>
-                            <li>4</li>
-                            <li>5</li>
+
                         </ul>
                     </div>
                 </div>
@@ -164,28 +157,27 @@
                                 <!-- 将doT.json内对应的对象名写进去 -->
                                 {{~it:value:index}}
                                 <li>
-                                    <img src="{{=value.img}}" alt="">
-                                    <p>花万元把蜗居秒变“豪宅”？这12件家具就能帮你办到</p>
-                                    <div class="dianping">
-                                        <div class="dianzan">
-                                            <img src="../img/reply.png" alt="">
-                                            <span>3</span>
+                                    <a href="../user/report2.html">
+                                        <img src="{{=value.img}}" alt="">
+                                        <p>花万元把蜗居秒变“豪宅”？这12件家具就能帮你办到</p>
+                                        <div class="dianping">
+                                            <div class="dianzan">
+                                                <img src="../img/reply.png" alt="">
+                                                <span>3</span>
+                                            </div>
+                                            <div class="pinglun">
+                                                <img src="../img/xinRedo.png" alt="">
+                                                <img src="../img/xinRedh.png" alt="">
+                                                <span>3</span>
+                                            </div>
                                         </div>
-                                        <div class="pinglun">
-                                            <img src="../img/xinRedo.png" alt="">
-                                            <img src="../img/xinRedh.png" alt="">
-                                            <span>3</span>
-                                        </div>
-                                    </div>
-                                    <div class="bian1"></div>
-                                    <div class="bian2"></div>
+                                        <div class="bian1"></div>
+                                        <div class="bian2"></div>
+                                    </a>
                                 </li>
                                 {{~}}
                             </script>
-                            <li>2</li>
-                            <li>3</li>
-                            <li>4</li>
-                            <li>5</li>
+
                         </ul>
                     </div>
                 </div>
@@ -196,6 +188,32 @@
                 <div class="w">
                     <h2>发现酷玩</h2>
                     <ul>
+                        <script id="li_tmpl-lb" type="text/x-dot-template">
+                            <!--doT.js独有语法 -->
+                            <!-- 六 展示数据 -->
+                            <!-- 将doT.json内对应的对象名写进去 -->
+                            {{~it:value:index}}
+                            <li>
+                                <img src="{{=value.img}}" alt="">
+                                <h3>
+                                    SCIO 微型光谱仪
+                                </h3>
+                                <p>支持所有音乐流媒体服务</p>
+                                <div class="dianping">
+                                    <span class="money">￥1212</span>
+                                    <div class="dianzan">
+                                        <img src="../img/xinRedo.png" alt="" id="dianzan">
+                                        <img src="../img/xinRedh.png" alt="">
+                                        <span>3</span>
+                                    </div>
+                                    <div class="pinglun">
+                                        <img src="../img/reply.png" alt="">
+                                        <span>3</span>
+                                    </div>
+                                </div>
+                            </li>
+                            {{~}}
+                        </script>
 
                     </ul>
                 </div>
@@ -318,47 +336,8 @@
     </footer>
     <script src="../js/ajax.js"></script>
     <script src="../js/doT.min.js"></script>
-    <script>
-        ajax({
-            type: 'get',
-            url: 'http://192.168.31.254:3000/report/hot',
-            success: function(result) {
-                console.log(result);
-                let arr1 = result.slice(0, 16);
-                let arr2 = [...arr1, ...arr1, ...arr1, ...arr1, ]
-                var tmpText = doT.template(document.querySelector("#li_tmpl-lb").innerText);
-                document.querySelector(".index_kuwan>.w>ul").innerHTML = tmpText(arr1)
-            }
-        })
-    </script>
     <script src="../js/daogou.js"></script>
-    <script id="li_tmpl-lb" type="text/x-dot-template">
-        <!--doT.js独有语法 -->
-        <!-- 六 展示数据 -->
-        <!-- 将doT.json内对应的对象名写进去 -->
-        {{~it:value:index}}
-        <li>
-            <img src="{{=value.img}}" alt="">
-            <h3>
-                SCIO 微型光谱仪
-            </h3>
-            <p>支持所有音乐流媒体服务</p>
-            <div class="dianping">
-                <span class="money">￥1212</span>
-                <div class="dianzan">
-                    <img src="../img/xinRedo.png" alt="">
-                    <img src="../img/xinRedh.png" alt="">
-                    <span>3</span>
-                </div>
-                <div class="pinglun">
-                    <img src="../img/reply.png" alt="">
-                    <span>3</span>
-                </div>
-            </div>
-        </li>
-        {{~}}
-    </script>
-
+    <script src="../js/index.js"></script>
 </body>
 
 </html>
