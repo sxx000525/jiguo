@@ -1,10 +1,15 @@
 <!--
  * @Author: SXX
- * @Date: 2021-04-02 10:11:06
+ * @Date: 2021-04-06 20:45:21
  * @LastEditors: SXX
- * @LastEditTime: 2021-04-06 20:57:43
+ * @LastEditTime: 2021-04-06 21:15:54
  * @Description: file content
- * @FilePath: \极果\user\report3.html
+ * @FilePath: \极果\play\play_fix.html
+-->
+<!--
+ * @Author: 徐松博
+ * @Date: 2021-04-06 09:23:22
+ * @LastEditTime: 2021-04-06 20:40:41
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -13,14 +18,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../font/iconfont.css">
-    <link rel="stylesheet" href="../css/report.css">
+    <title>发现酷玩</title>
+    <link rel="stylesheet" href="../css/play_new.css">
     <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../font/iconfont.css">
 </head>
 
 <body>
-    <!-- 头部导航开始 -->
     <header>
         <div class="nav wrapper clearfix">
             <div class="img">
@@ -66,57 +70,57 @@
             </div>
         </div>
     </header>
-    <!-- 头部结束结束 -->
-    <!-- 内容开始 -->
+    <!-- 头部结束 -->
+    <!-- 主体 -->
     <main>
-        <section class="section1">
+        <div class="section1">
             <div class="wrapper">
                 <div class="text">
-                    <p>体检报告</p>
+                    <p>发现酷玩</p>
                 </div>
                 <div class="text2">
-                    <span class="btn1">
-                    <a href="../user/report.html">最新</a>
+                    <span class="btn1 ">
+                        <a href="../play/play_new.html">最新</a>
                     </span>
-                    <span class="btn2  active">
-                    <a href="#">最热</a>
-                </span>
+                    <span class="btn2 active">
+                        <a href="#">最热</a>
+                    </span>
+                    <span class="btn3">
+                        <a href="../user/category.html">品类</a>
+                    </span>
                 </div>
             </div>
-        </section>
-        <section class="section3 clearfix">
-            <div class="wrapper">
-                <div class="main-l clearfix">
-                    <div class="main-l-box clearfix">
-                    </div>
-
-                    <div class="main-l-b">
-                        <span><img src="../img/more.png" alt=""> 点击加载更多</span>
-                    </div>
-                </div>
-                <div class="main-r">
-                    <div class="text">极果体验师</div>
-                    <div class="img">
-                        <img src="../img/tiyanImg.jpg" alt="">
-                    </div>
-                    <dl>
-                        <dt>福利</dt>
-                        <dd>第一时间体验新品，大众使用优先通过，还有定向邀请试用，新品玩到手软！</dd>
-                        <dt>要求</dt>
-                        <dd>是某个领域的大神级玩家，在社交网站或圈子里有大影响力，善写作会拍摄。</dd>
-                        <dt>申请</dt>
-                        <dd>1、关注极果公众号：jiguo<br>&emsp;(或扫描下放二维码)</dd>
-                        <dd>2、在公众号内回复：体验师</dd>
-                    </dl>
-                    <div class="text">关注我们</div>
-                    <div class="img2">
-                        <img src="../img/myCode.jpg" alt="">
-                    </div>
-                </div>
+        </div>
+        <div class="section2" style="height: 1100px;">
+            <div class="nav_new">
+                <ul id="ul4">
+                    <script id="li_tmpl-y4" type="text/x-dot-template">
+                        {{~it:value:index}}
+                        <li>
+                            <img src="{{=value.img}}" alt="">
+                            <h3>
+                                {{=value.text}}
+                            </h3>
+                            <p>支持所有音乐流媒体服务</p>
+                            <div class="dianping">
+                                <span class="money">￥1212</span>
+                                <div class="dianzan">
+                                    <img src="../img/xinRedo.png" alt="">
+                                    <img src="../img/xinRedh.png" alt="">
+                                    <span>3</span>
+                                </div>
+                                <div class="pinglun">
+                                    <img src="../img/reply.png" alt="">
+                                    <span>3</span>
+                                </div>
+                            </div>
+                        </li>
+                        {{~}}
+                    </script>
+                </ul>
             </div>
-        </section>
+        </div>
     </main>
-    <!-- 内容结束 -->
     <!-- 脚注开始 -->
     <footer class="clearfix">
         <div class="footer-box wrapper clearfix">
@@ -232,55 +236,12 @@
         </div>
     </footer>
     <!-- 脚注结束 -->
-    <!-- <script src="../js/report.js"></script> -->
-    <script src="../js/ajax.js"></script>
-    <script src="../js/doT.min.js"></script>
-    <!-- <script src="../js/report-s.js"></script> -->
-    <script>
-        ajax({
-            type: 'get',
-            url: 'http://192.168.31.254:3000/report/new',
-            success: function(result) {
-                console.log(result);
-                let arr1 = result.slice(5, );
-                let arr2 = [...arr1, ...arr1, ...arr1, ...arr1, ]
-                var tmpText = doT.template(document.querySelector("#li_tmpl-lb").innerText);
-                document.querySelector(".main-l-box").innerHTML = tmpText(arr1)
-            }
-        })
-    </script>
-
-    <script id="li_tmpl-lb" type="text/x-dot-template">
-        <!--doT.js独有语法 -->
-        <!-- 六 展示数据 -->
-        <!-- 将doT.json内对应的对象名写进去 -->
-        {{~it:value:index}}
-        <div class="main-box">
-            <div class="main1">
-                <img src="{{=value.img}}" alt="">
-            </div>
-            <div class="susu">
-                <p>{{=value.text}}</p>
-                <div class="susu-b">
-                    <span class="susu-l">
-                    <img src="../img/tx.jpg" alt="">
-                    <span>苏苏</span>
-                    <span>2016-01-25</span>
-                    </span>
-                    <span class="susu-r">
-                    <span class="zan">
-                        <img src="../img/zan.png" alt="">3</span>
-                    <span class="xinxi"><img src="../img/reply.png" alt="">3</span>
-                    </span>
-                </div>
-            </div>
-        </div>
-        <div class="guanyu">
-            关于格林威特空气净化器还有4篇报告,点击查看
-        </div>
-        {{~}}
-    </script>
 
 </body>
+<script src="../js/ajax.js"></script>
+<script src="../js/doT.min.js"></script>
+<script src="../js/daogou.js"></script>
+<script>
+</script>
 
 </html>

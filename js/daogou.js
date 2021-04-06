@@ -2,7 +2,7 @@
  * @Author: SXX
  * @Date: 2021-04-06 17:05:23
  * @LastEditors: SXX
- * @LastEditTime: 2021-04-06 17:34:50
+ * @LastEditTime: 2021-04-06 21:58:51
  * @Description: file content
  * @FilePath: \极果\js\daogou.js
  */
@@ -42,5 +42,40 @@ ajax({
         let arr8 = [...arr7, ...arr7, ...arr7, ...arr7, ]
         var tmpText = doT.template(document.querySelector("#li_tmpl-lb").innerText);
         document.querySelector(".index_kuwan>.w>ul").innerHTML = tmpText(arr7)
+    }
+})
+ajax({
+    type: 'get',
+    url: 'http://192.168.31.254:3000/report/hot',
+    success: function(result) {
+        console.log(result);
+        let arr9 = result.slice(0, 16);
+
+        let arr10 = [...arr9, ...arr9, ...arr9, ...arr9, ]
+        var tmpText = doT.template(document.querySelector("#li_tmpl-y3").innerText);
+        document.querySelector("#ul3").innerHTML = tmpText(arr9)
+    }
+})
+ajax({
+    type: 'get',
+    url: 'http://192.168.31.254:3000/report/hot',
+    success: function(result) {
+        console.log(result);
+        let arr11 = result.slice(0, 16);
+
+        let arr12 = [...arr11, ...arr11, ...arr11, ...arr11, ]
+        var tmpText = doT.template(document.querySelector("#li_tmpl-y4").innerText);
+        document.querySelector("#ul4").innerHTML = tmpText(arr11)
+    }
+})
+ajax({
+    type: 'get',
+    url: 'http://192.168.31.254:3000/guid/new',
+    success: function(result) {
+        console.log(result);
+        let arr13 = result.slice(0, 15);
+        let arr14 = [...arr13, ...arr13, ...arr13, ...arr13, ]
+        var tmpText = doT.template(document.querySelector("#li_tmpl-y5").innerText);
+        document.querySelector("#ul5").innerHTML = tmpText(arr13)
     }
 })
