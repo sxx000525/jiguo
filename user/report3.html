@@ -2,9 +2,9 @@
  * @Author: SXX
  * @Date: 2021-04-02 10:11:06
  * @LastEditors: SXX
- * @LastEditTime: 2021-04-06 13:04:50
+ * @LastEditTime: 2021-04-06 13:03:01
  * @Description: file content
- * @FilePath: \极果\user\report.html
+ * @FilePath: \极果\user\report3.html
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -75,11 +75,11 @@
                     <p>体检报告</p>
                 </div>
                 <div class="text2">
-                    <span class="btn1 active">
-                    <a href="#">最新</a>
+                    <span class="btn1">
+                    <a href="../user/report.html">最新</a>
                     </span>
-                    <span class="btn2  ">
-                    <a href="../user/report3.html">最热</a>
+                    <span class="btn2  active">
+                    <a href="#">最热</a>
                 </span>
                 </div>
             </div>
@@ -261,7 +261,7 @@
     <script>
         ajax({
             type: 'get',
-            url: 'http://192.168.31.254:3000/report/hot',
+            url: 'http://192.168.31.254:3000/report/new',
             success: function(result) {
                 console.log(result);
                 let arr1 = result.slice(5, );
