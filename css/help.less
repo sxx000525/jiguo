@@ -1,0 +1,744 @@
+main {
+    background: #f7f7f7;
+
+    // 免费试用
+    .header_nav {
+        width: 100%;
+        background: #fff;
+
+
+        //  导航
+        .nav {
+            margin: 0 auto;
+            // width: 1000px;
+            // height: 50px;
+            text-align: center;
+            border-bottom: 1px solid #c9c9c9;
+
+            h1 {
+                font-weight: 200;
+                font-size: 36px;
+                margin: 15px;
+            }
+            span{
+                display: inline-block;
+                padding: 10px;
+               color: #999;
+            }
+            .active{
+                 border-bottom:4px solid red ;
+                 color: #f33a34;
+            }
+        }
+
+        // 子导航
+        .subnav {
+            margin: 0 auto;
+            // width: 1000px;
+            height: 50px;
+            // border: 1px solid red;
+
+            ul {
+                display: flex;
+                justify-content: center;
+
+                li {
+                    padding: 0 60px;
+                    line-height: 50px;
+                    color: rgb(171, 171, 171);
+                }
+
+                .active {
+                    color: black;
+                }
+            }
+        }
+    }
+
+    // 商品内容区
+    .shangpin {
+
+        //大众试用 商品 全部 
+        .nav_shop_all {
+            // display: none;
+            width: 1000px;
+            margin: 0 auto;
+            // border: 1px solid red;
+            text-align: center;
+
+            ul {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+
+                li {
+                    width: 220px;
+                    height: 290px;
+                    margin: 25px 0 35px;
+                    // border: 1px solid red;
+                    border-radius: 6px;
+                    position: relative;
+                    background: white;
+
+                    img {
+                        width: 100%;
+                        border-radius: 6px 6px 0 0;
+                    }
+
+                    // 标题
+                    p {
+                        padding: 5px;
+                        margin-bottom: 5px;
+                        font-size: 16px;
+                        font-weight: 700;
+                    }
+
+                    // 人数
+                    .shu {
+                        display: inline-block;
+                        width: 48px;
+                        height: 25px;
+                        border: 1px solid #c9c9c9;
+                        color: #c9c9c9;
+                        border-radius: 5px;
+                    }
+
+                    .ren {
+                        display: inline-block;
+                        width: 48px;
+                        height: 25px;
+                        border: 1px solid #c9c9c9;
+                        margin-right: 13px;
+                    }
+
+                    div {
+                        margin: 12px 0;
+
+                        span {
+                            color: red;
+                        }
+                    }
+
+                    .number {
+                        color: #c9c9c9;
+                    }
+
+                    .firstIssue {
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        // width: 40px;
+                        height: 22px;
+                        line-height: 22px;
+                        font-size: 14px;
+                        color: #fff;
+                        background: rgb(255, 73, 73);
+                        border-radius: 0 6px 0 6px;
+
+                    }
+                }
+            }
+        }
+
+        // 大众试用 商品 申请
+        .nav_shop_apply {
+            display: none;
+            width: 1000px;
+            margin: 0 auto;
+            // border: 1px solid red;
+            text-align: center;
+
+            ul {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+
+                li {
+                    width: 220px;
+                    height: 290px;
+                    margin: 25px 0 35px;
+                    // border: 1px solid red;
+                    border-radius: 6px;
+                    position: relative;
+
+                    img {
+                        width: 100%;
+                        border-radius: 6px 6px 0 0;
+                    }
+
+                    // 标题
+                    p {
+                        padding: 5px;
+                        margin-bottom: 5px;
+                        font-size: 16px;
+                        font-weight: 700;
+                    }
+
+                    // 人数
+                    .shu {
+                        display: inline-block;
+                        width: 48px;
+                        height: 25px;
+                        border: 1px solid #c9c9c9;
+                        color: #c9c9c9;
+                        border-radius: 5px;
+                    }
+
+                    .ren {
+                        display: inline-block;
+                        width: 48px;
+                        height: 25px;
+                        border: 1px solid #c9c9c9;
+                        margin-right: 13px;
+                    }
+
+                    div {
+                        margin: 12px 0;
+
+                        span {
+                            color: red;
+                        }
+                    }
+
+                    .number {
+                        color: #c9c9c9;
+                    }
+
+                    .firstIssue {
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        // width: 40px;
+                        height: 22px;
+                        line-height: 22px;
+                        font-size: 14px;
+                        color: #fff;
+                        background: rgb(255, 73, 73);
+                        border-radius: 0 8px 0 8px;
+
+                    }
+                }
+            }
+
+            .apply_no {
+                margin: 20px 0 30px;
+                color: #c9c9c9;
+            }
+        }
+
+        // 大众试用 商品 试用中
+        .nav_shop_InTheTrial {
+            display: none;
+            width: 1000px;
+            margin: 0 auto;
+            border: 1px solid red;
+            text-align: center;
+
+            ul {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+
+                li {
+                    width: 220px;
+                    height: 290px;
+                    margin: 25px 0 35px;
+                    border: 1px solid red;
+                    border-radius: 6px;
+                    position: relative;
+
+                    img {
+                        width: 100%;
+                        border-radius: 6px 6px 0 0;
+                    }
+
+                    // 标题
+                    p {
+                        padding: 5px;
+                        margin-bottom: 5px;
+                        font-size: 16px;
+                        font-weight: 700;
+                    }
+
+                    // 人数
+                    .InTheTrial_shu {
+                        display: inline-block;
+                        width: 48px;
+                        height: 25px;
+                        border: 1px solid rgb(20, 177, 20);
+                        color: #49c476;
+                        border-radius: 5px;
+                    }
+
+                    .ren {
+                        display: inline-block;
+                        width: 48px;
+                        height: 25px;
+                        border: 1px solid #c9c9c9;
+                        margin-right: 13px;
+                    }
+
+                    div {
+                        margin: 12px 0;
+
+                        span {
+                            color: red;
+                        }
+                    }
+
+                    .InTheTrial_number {
+                        color: #2bc16c;
+                    }
+
+                    .InTheTrial {
+                        position: absolute;
+                        top: -1px;
+                        right: 0;
+                        // width: 40px;
+                        padding: 0 5px;
+                        height: 22px;
+                        line-height: 22px;
+                        font-size: 14px;
+                        color: #fff;
+                        background: rgb(255, 73, 73);
+                        border-radius: 0 8px 0 8px;
+
+                    }
+                }
+            }
+
+            .apply_no {
+                margin: 20px 0 30px;
+                color: #c9c9c9;
+            }
+        }
+
+        // 大众试用 商品 已结束
+        .nav_shop_over {
+            display: none;
+            width: 1000px;
+            margin: 0 auto;
+            border: 1px solid red;
+            text-align: center;
+
+            ul {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+
+                li {
+                    width: 220px;
+                    height: 290px;
+                    margin: 25px 0 35px;
+                    //   border: 1px solid red;
+                    border-radius: 6px;
+                    position: relative;
+                    background: #fff;
+
+                    img {
+                        width: 100%;
+                        border-radius: 6px 6px 0 0;
+                    }
+
+                    // 标题
+                    p {
+                        padding: 5px;
+                        margin-bottom: 5px;
+                        font-size: 16px;
+                        font-weight: 700;
+                    }
+
+                    // 人数
+                    .InTheTrial_shu {
+                        display: inline-block;
+                        width: 48px;
+                        height: 25px;
+                        border: 1px solid rgb(20, 177, 20);
+                        color: #49c476;
+                        border-radius: 5px;
+                    }
+
+                    .ren {
+                        display: inline-block;
+                        width: 48px;
+                        height: 25px;
+                        border: 1px solid #c9c9c9;
+                        margin-right: 13px;
+                    }
+
+                    div {
+                        margin: 12px 0;
+
+                        span {
+                            color: red;
+                        }
+                    }
+
+                    .InTheTrial_number {
+                        color: #2bc16c;
+                    }
+
+                    .InTheTrial {
+                        position: absolute;
+                        top: -1px;
+                        right: 0;
+                        // width: 40px;
+                        padding: 0 5px;
+                        height: 22px;
+                        line-height: 22px;
+                        font-size: 14px;
+                        color: #fff;
+                        background: rgb(255, 73, 73);
+                        border-radius: 0 8px 0 8px;
+
+                    }
+                }
+            }
+
+            .apply_no {
+                margin: 20px 0 30px;
+                color: #c9c9c9;
+            }
+        }
+
+        //  体验师专享 全部
+        .exclusive_shop_all {
+            display: none;
+            width: 1000px;
+            margin: 0 auto;
+            border: 1px solid red;
+            text-align: center;
+
+            ul {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+
+                li {
+                    width: 220px;
+                    height: 290px;
+                    margin: 25px 0 35px;
+                    //   border: 1px solid red;
+                    border-radius: 6px;
+                    position: relative;
+                    background: #fff;
+
+                    img {
+                        width: 100%;
+                        border-radius: 6px 6px 0 0;
+                    }
+
+                    // 标题
+                    p {
+                        padding: 5px;
+                        margin-bottom: 5px;
+                        font-size: 16px;
+                        font-weight: 700;
+                    }
+
+                    // 人数
+                    .e_InTheTrial_shu {
+                        display: inline-block;
+                        width: 48px;
+                        height: 25px;
+                        line-height: 25px;
+                        border: 1px solid rgb(243, 41, 41);
+                        color: #f33a34;
+                        border-radius: 5px;
+                    }
+
+                    .e_InTheTrial_ren {
+                        margin-right: 13px;
+                    }
+
+                    div {
+                        margin: 12px 0;
+
+                        span {
+                            color: red;
+                        }
+                    }
+
+                    .e_InTheTrial_number {
+                        color: #f84842;
+                    }
+
+                    .e_InTheTrial {
+                        position: absolute;
+                        top: -1px;
+                        right: 0;
+                        // width: 40px;
+                        padding: 0 5px;
+                        height: 22px;
+                        line-height: 22px;
+                        font-size: 14px;
+                        color: #fff;
+                        background: rgb(223, 220, 144);
+                        border-radius: 0 6px 0 7px;
+
+                    }
+                }
+            }
+
+            .e_apply_no {
+                margin: 20px 0 30px;
+                color: #c9c9c9;
+            }
+        }
+
+        // 体验师专享 申请中
+        .exclusive_shop_apply {
+            display: none;
+            width: 1000px;
+            margin: 0 auto;
+            border: 1px solid red;
+            text-align: center;
+
+            ul {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+
+                li {
+                    width: 220px;
+                    height: 290px;
+                    margin: 25px 0 35px;
+                    //   border: 1px solid red;
+                    border-radius: 6px;
+                    position: relative;
+                    background: #fff;
+
+                    img {
+                        width: 100%;
+                        border-radius: 6px 6px 0 0;
+                    }
+
+                    // 标题
+                    p {
+                        padding: 5px;
+                        margin-bottom: 5px;
+                        font-size: 16px;
+                        font-weight: 700;
+                    }
+
+                    // 人数
+                    .e_InTheTrial_shu {
+                        display: inline-block;
+                        width: 48px;
+                        height: 25px;
+                        line-height: 25px;
+                        border: 1px solid rgb(243, 41, 41);
+                        color: #f33a34;
+                        border-radius: 5px;
+                    }
+
+                    .e_InTheTrial_ren {
+                        margin-right: 13px;
+                    }
+
+                    div {
+                        margin: 12px 0;
+
+                        span {
+                            color: red;
+                        }
+                    }
+
+                    .e_InTheTrial_number {
+                        color: #f84842;
+                    }
+
+                    .e_InTheTrial {
+                        position: absolute;
+                        top: -1px;
+                        right: 0;
+                        // width: 40px;
+                        padding: 0 5px;
+                        height: 22px;
+                        line-height: 22px;
+                        font-size: 14px;
+                        color: #fff;
+                        background: rgb(223, 220, 144);
+                        border-radius: 0 6px 0 7px;
+
+                    }
+                }
+            }
+
+            .e_apply_no {
+                margin: 20px 0 30px;
+                color: #c9c9c9;
+            }
+        }
+
+        //  体验师专享 试用中
+        .exclusive_shop_InTheTrial {
+            display: none;
+            width: 1000px;
+            margin: 0 auto;
+            border: 1px solid red;
+            text-align: center;
+
+            ul {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+
+                li {
+                    width: 220px;
+                    height: 290px;
+                    margin: 25px 0 35px;
+                    //   border: 1px solid red;
+                    border-radius: 6px;
+                    position: relative;
+                    background: #fff;
+
+                    img {
+                        width: 100%;
+                        border-radius: 6px 6px 0 0;
+                    }
+
+                    // 标题
+                    p {
+                        padding: 5px;
+                        margin-bottom: 5px;
+                        font-size: 16px;
+                        font-weight: 700;
+                    }
+
+                    // 人数
+                    .e_InTheTrial_shu {
+                        display: inline-block;
+                        width: 48px;
+                        height: 25px;
+                        line-height: 25px;
+                        border: 1px solid rgb(243, 41, 41);
+                        color: #f33a34;
+                        border-radius: 5px;
+                    }
+
+                    .e_InTheTrial_ren {
+                        margin-right: 13px;
+                    }
+
+                    div {
+                        margin: 12px 0;
+
+                        span {
+                            color: red;
+                        }
+                    }
+
+                    .e_InTheTrial_number {
+                        color: #f84842;
+                    }
+
+                    .e_InTheTrial {
+                        position: absolute;
+                        top: -1px;
+                        right: 0;
+                        // width: 40px;
+                        padding: 0 5px;
+                        height: 22px;
+                        line-height: 22px;
+                        font-size: 14px;
+                        color: #fff;
+                        background: rgb(223, 220, 144);
+                        border-radius: 0 6px 0 7px;
+
+                    }
+                }
+            }
+
+            .e_apply_no {
+                margin: 20px 0 30px;
+                color: #c9c9c9;
+            }
+        }
+
+        // 体验师专享 已结束
+        .exclusive_shop_over {
+            display: none;
+            width: 1000px;
+            margin: 0 auto;
+            border: 1px solid red;
+            text-align: center;
+
+            ul {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+
+                li {
+                    width: 220px;
+                    height: 290px;
+                    margin: 25px 0 35px;
+                    //   border: 1px solid red;
+                    border-radius: 6px;
+                    position: relative;
+                    background: #fff;
+
+                    img {
+                        width: 100%;
+                        border-radius: 6px 6px 0 0;
+                    }
+
+                    // 标题
+                    p {
+                        padding: 5px;
+                        margin-bottom: 5px;
+                        font-size: 16px;
+                        font-weight: 700;
+                    }
+
+                    // 人数
+                    .e_InTheTrial_shu {
+                        display: inline-block;
+                        width: 48px;
+                        height: 25px;
+                        line-height: 25px;
+                        border: 1px solid rgb(243, 41, 41);
+                        color: #f33a34;
+                        border-radius: 5px;
+                    }
+
+                    .e_InTheTrial_ren {
+                        margin-right: 13px;
+                    }
+
+                    div {
+                        margin: 12px 0;
+
+                        span {
+                            color: red;
+                        }
+                    }
+
+                    .e_InTheTrial_number {
+                        color: #f84842;
+                    }
+
+                    .e_InTheTrial {
+                        position: absolute;
+                        top: -1px;
+                        right: 0;
+                        // width: 40px;
+                        padding: 0 5px;
+                        height: 22px;
+                        line-height: 22px;
+                        font-size: 14px;
+                        color: #fff;
+                        background: rgb(223, 220, 144);
+                        border-radius: 0 6px 0 7px;
+
+                    }
+                }
+            }
+
+            .e_apply_no {
+                margin: 20px 0 30px;
+                color: #c9c9c9;
+            }
+        }
+    }
+}
