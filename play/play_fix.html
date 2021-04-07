@@ -2,7 +2,7 @@
  * @Author: SXX
  * @Date: 2021-04-06 20:45:21
  * @LastEditors: SXX
- * @LastEditTime: 2021-04-07 10:21:59
+ * @LastEditTime: 2021-04-07 11:10:02
  * @Description: file content
  * @FilePath: \极果\play\play_fix.html
 -->
@@ -118,6 +118,10 @@
                         {{~}}
                     </script>
                 </ul>
+            </div>
+            <div class="index_jiazai">
+                <a href="#"><img src="../img/more.png" alt=""></a>
+                <p>点击加载更多</p>
             </div>
         </div>
     </main>
@@ -242,6 +246,15 @@
 <script src="../js/doT.min.js"></script>
 <script src="../js/daogou.js"></script>
 <script>
+    var dian = document.querySelector(".index_jiazai");
+    var img = document.querySelector(".index_jiazai img");
+    var p = document.querySelector(".index_jiazai p");
+    console.log(img)
+    dian.onclick = function() {
+        p.innerHTML = "正在加载中"
+        img.src = "../img/loading-icon.gif";
+    }
 </script>
+
 
 </html>

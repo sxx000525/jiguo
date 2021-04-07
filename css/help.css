@@ -167,6 +167,18 @@ main .shangpin .nav_shop_all ul li:nth-of-type(3n-1) .firstIssue {
   border-radius: 0 6px 0 6px;
   padding: 0 5px;
 }
+main .shangpin .index_jiazai {
+  text-align: center;
+  margin: 30px 0;
+  color: #ff6700;
+  cursor: pointer;
+}
+main .shangpin .index_jiazai img {
+  vertical-align: middle;
+}
+main .shangpin .index_jiazai p {
+  display: inline-block;
+}
 main .shangpin .nav_shop_apply {
   display: none;
   width: 1000px;

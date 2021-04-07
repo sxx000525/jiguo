@@ -227,6 +227,17 @@ main .section2 .nav_new ul li .dianping .pinglun span {
   width: 15px;
   height: 16px;
 }
+main .section2 .index_jiazai {
+  text-align: center;
+  color: #ff6700;
+  cursor: pointer;
+}
+main .section2 .index_jiazai img {
+  vertical-align: middle;
+}
+main .section2 .index_jiazai p {
+  display: inline-block;
+}
 footer {
   width: 100%;
   background: #505050;

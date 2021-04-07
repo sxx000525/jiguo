@@ -147,10 +147,9 @@ main .index_hot {
 main .index_hot .w {
   width: 1000px;
   margin: 0 auto;
-  border: 1px solid red;
 }
 main .index_hot .w h2 {
-  margin: 25px 0 25px 15px;
+  margin: 0 0 25px 15px;
 }
 main .index_hot .w > span:nth-of-type(1) {
   float: left;
@@ -516,6 +515,18 @@ main .index_kuwan .w ul li .dianping .pinglun span {
   right: 15px;
   width: 15px;
   height: 16px;
+}
+main .index_kuwan .index_jiazai {
+  text-align: center;
+  margin: 30px 0;
+  color: #ff6700;
+  cursor: pointer;
+}
+main .index_kuwan .index_jiazai img {
+  vertical-align: middle;
+}
+main .index_kuwan .index_jiazai p {
+  display: inline-block;
 }
 footer {
   width: 100%;

@@ -1,0 +1,213 @@
+/* 轮播图样式 */
+
+
+/**热门试用**/
+
+.title {
+    color: #474747;
+    line-height: 1.6;
+}
+
+.title a.more {
+    background: url(img/readMore.png) no-repeat right 7px;
+    color: #fd6959;
+}
+
+.hot {
+    width: 1000px;
+    padding-bottom: 20px;
+    margin: 0 auto;
+}
+
+.hot a.prev {
+    background: url(img/prev.png) no-repeat;
+}
+
+.hot a.next {
+    background: url(img/next.png) no-repeat;
+}
+
+.slide-box dl {
+    background: #fff;
+}
+
+.use dt .top-tip {
+    color: #f5e8e8;
+}
+
+.use dt .shoufa {
+    background: #fe5341;
+}
+
+.use dt .red span,
+.use dt .sq span,
+.use dt .red {
+    color: #fe5341;
+}
+
+.use dt .tys {
+    background: #fbf4cb;
+    color: #c4a96a;
+}
+
+.use dt .green span,
+.use dt .green {
+    color: #80c269;
+}
+
+.use dt .graw span,
+.use dt .graw {
+    color: #ccc;
+}
+
+
+/**热门试用**/
+
+.common .title,
+.hot-box .title {
+    position: relative;
+    padding: 18px 0 16px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.common .title a.more {
+    font-weight: normal;
+    position: absolute;
+    right: 0;
+    top: 22px;
+    padding-right: 17px;
+    font-size: 14px;
+}
+
+.hot {
+    position: relative;
+}
+
+.hot a.prev,
+.hot a.next {
+    position: absolute;
+    width: 37px;
+    height: 78px;
+    top: 120px;
+}
+
+.hot a.prev {
+    left: -60px;
+}
+
+.hot a.next {
+    right: -60px;
+}
+
+.hot .hot-slide {
+    position: relative;
+    height: 295px;
+    overflow: hidden;
+}
+
+.slide-box {
+    position: relative;
+    height: 295px;
+}
+
+.slide-box dl {
+    position: absolute;
+    width: 1000px;
+    z-index: 1;
+    left: 0;
+    top: 0;
+}
+
+.slide-box dl.on {
+    z-index: 2;
+}
+
+.use dl:after {
+    clear: both;
+    content: "";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+.use dl dt {
+    position: relative;
+    overflow: hidden;
+    width: 220px;
+    height: 286px;
+    float: left;
+    border: 1px solid #e6e9e9;
+    border-radius: 6px;
+    margin-right: 37px;
+}
+
+.use dl dt:nth-child(4n + 4) {
+    margin-right: 0;
+}
+
+.use dt a {
+    display: block;
+    list-style: none;
+    text-decoration: none;
+}
+
+.use dt .top-tip {
+    position: absolute;
+    line-height: 22px;
+    z-index: 10;
+    padding: 0 8px;
+    border-radius: 0 0 0 6px;
+    top: 0;
+    right: 0;
+}
+
+.use dt .hot-con {
+    /* padding: 8px 8px 14px; */
+    text-align: center;
+}
+
+.use dt .hot-con h2 {
+    color: #474747;
+    border: none;
+}
+
+.use dt .name {
+    font-size: 16px;
+    height: 48px;
+    font-weight: bold;
+}
+
+.use dt .tabs {
+    /* padding: 6px 0; */
+}
+
+.use dt .tabs span {
+    display: inline-block;
+    padding: 2px 10px;
+    margin: 0 5px;
+    border-radius: 5px;
+}
+
+.use dt .red span {
+    border: 1px solid #fe5341;
+}
+
+.use dt .green span {
+    border: 1px solid #80c269;
+}
+
+.use dt .graw span {
+    border: 1px solid #ccc;
+}
+
+.use dt .sq {
+    font-size: 16px;
+    line-height: 28px;
+    color: #474747;
+}
+
+.use dt .current {
+    font-size: 14px;
+    line-height: 20px;
+}

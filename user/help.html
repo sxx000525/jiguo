@@ -1,7 +1,7 @@
 <!--
  * @Author: 徐松博
  * @Date: 2021-04-02 10:45:13
- * @LastEditTime: 2021-04-07 09:47:14
+ * @LastEditTime: 2021-04-07 11:14:13
 -->
 
 <!DOCTYPE html>
@@ -93,7 +93,7 @@
 
         </div>
         <!-- 商品内容区 -->
-        <div class="shangpin" style="height: 1000px;">
+        <div class="shangpin" style="height: 1100px;">
             <!-- 大众试用 商品 全部 -->
             <div class="nav_shop_all">
                 <ul id="ul6">
@@ -117,7 +117,10 @@
                     </script>
                 </ul>
             </div>
-
+            <div class="index_jiazai">
+                <a href="#"><img src="../img/more.png" alt=""></a>
+                <p>点击加载更多</p>
+            </div>
         </div>
 
 
@@ -241,5 +244,15 @@
 <script src="../js/ajax.js"></script>
 <script src="../js/doT.min.js"></script>
 <script src="../js/daogou.js"></script>
+<script>
+    var dian = document.querySelector(".index_jiazai");
+    var img = document.querySelector(".index_jiazai img");
+    var p = document.querySelector(".index_jiazai p");
+    console.log(img)
+    dian.onclick = function() {
+        p.innerHTML = "正在加载中"
+        img.src = "../img/loading-icon.gif";
+    }
+</script>
 
 </html>
