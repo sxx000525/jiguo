@@ -2,7 +2,7 @@
  * @Author: SXX
  * @Date: 2021-04-04 16:42:37
  * @LastEditors: SXX
- * @LastEditTime: 2021-04-06 08:47:43
+ * @LastEditTime: 2021-04-07 14:26:01
  * @Description: file content
  * @FilePath: \极果\user\report2.html
 -->
@@ -31,31 +31,31 @@
                 <li>
                     <div class="box">
                         <a href="#" class="top top1">首页</a>
-                        <a href="#" class="bottom">首页</a>
+                        <a href="../user/index.html" class="bottom">首页</a>
                     </div>
                 </li>
                 <li>
                     <div class="box">
                         <a href="#" class="top">酷玩</a>
-                        <a href="#" class="bottom">酷玩</a>
+                        <a href="../play/play_new.html" class="bottom">酷玩</a>
                     </div>
                 </li>
                 <li>
                     <div class="box">
                         <a href="#" class="top">导购</a>
-                        <a href="#" class="bottom">导购</a>
+                        <a href="../shiyong/shiyong.html" class="bottom">导购</a>
                     </div>
                 </li>
                 <li>
                     <div class="box">
                         <a href="#" class="top">试用</a>
-                        <a href="#" class="bottom">试用</a>
+                        <a href="../user/help.html" class="bottom">试用</a>
                     </div>
                 </li>
                 <li>
                     <div class="box">
                         <a href="#" class="top">报告</a>
-                        <a href="#" class="bottom">报告</a>
+                        <a href="../user/report.html" class="bottom">报告</a>
                     </div>
                 </li>
             </ul>
@@ -121,7 +121,7 @@
                     <div class="main-right-box">
                         <div class="main-right-box-l active">
                             <img src="../img/xinRedo.png" alt="" class="img3"><br>
-                            <span class="text3">喜欢15</span>
+                            <span class="text3">喜欢<span class="num">15</span></span>
                         </div>
 
                         <div class="main-right-box-r active">
@@ -252,6 +252,22 @@
         </div>
     </footer>
     <!-- 脚注结束 -->
+    <script>
+        let lick = document.querySelector('.main-right-box-l')
+        let num = document.querySelector(".num")
+        let img3 = document.querySelector('.img3')
+        let num1 = 15;
+        lick.onclick = function() {
+            ++num1;
+            num.innerHTML = num1;
+            img3.src = '../img/xinRedh.png'
+            lick.onclick = function() {
+                num.innerHTML = 15;
+                img3.src = '../img/xinRedo.png'
+
+            }
+        }
+    </script>
 </body>
 
 </html>

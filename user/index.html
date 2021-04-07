@@ -2,7 +2,7 @@
  * @Author: SXX
  * @Date: 2021-03-31 16:22:02
  * @LastEditors: SXX
- * @LastEditTime: 2021-04-07 11:46:40
+ * @LastEditTime: 2021-04-07 17:08:14
  * @Description: file content
  * @FilePath: \极果\user\index.html
 -->
@@ -61,7 +61,7 @@
             </ul>
             <div class="zhuce">
                 <button>
-                    <a href="#">注册</a>
+                    <a href="../user/regist.html">注册</a>
                 </button>
                 <span class="iconfont"><a href="https://www.baidu.com">&#xe618;</a></span>
             </div>
@@ -315,7 +315,7 @@
                                     <img src="{{=value.img}}" alt="">
                                     <p>{{=value.text}}</p>
                                     <div class="dianping">
-                                        <span class="index_name">• 苏苏</span>
+                                        <span class="index_name">• {{=value. uName}}</span>
                                         <div class="dianzan">
                                             <img src="../img/reply.png" alt="">
                                             <span class="num">3</span>
@@ -402,7 +402,31 @@
                             </li>
                             {{~}}
                         </script>
-
+                    </ul>
+                    <ul id="ul8">
+                        <script id="li_tmpl-lb2" type="text/x-dot-template">
+                            {{~it:value:index}}
+                            <li>
+                                <img src="{{=value.img}}" alt="">
+                                <h3>
+                                    SCIO 微型光谱仪
+                                </h3>
+                                <p>支持所有音乐流媒体服务</p>
+                                <div class="dianping">
+                                    <span class="money">￥1212</span>
+                                    <div class="dianzan">
+                                        <img src="../img/xinRedo.png" alt="" id="dianzan">
+                                        <img src="../img/xinRedh.png" alt="">
+                                        <span>3</span>
+                                    </div>
+                                    <div class="pinglun">
+                                        <img src="../img/reply.png" alt="">
+                                        <span>3</span>
+                                    </div>
+                                </div>
+                            </li>
+                            {{~}}
+                        </script>
                     </ul>
                 </div>
                 <div class="index_jiazai">
@@ -412,6 +436,7 @@
             </div>
 
         </div>
+
     </main>
     <footer class="clearfix">
         <div class="footer-box wrapper clearfix">
@@ -511,7 +536,7 @@
             </dl>
             <dl>
                 <dt>厂商合作</dt>
-                <dd><a href="#">关于极果</a></dd>
+                <dd><a href="../user/about.html">关于极果</a></dd>
                 <dd>
                     <a href="#">联系我们</a>
                 </dd>
@@ -526,6 +551,9 @@
         <div class="footer-bottom">
             <p>&copy;2016 极果版权所有</p>
         </div>
+        <div class="go_top">
+            <img src="../img/back.png" alt="">
+        </div>
     </footer>
     <script src="../js/ajax.js"></script>
     <script src="../js/doT.min.js"></script>
@@ -539,8 +567,47 @@
         var p = document.querySelector(".index_jiazai p");
         console.log(img)
         dian.onclick = function() {
-            p.innerHTML = "正在加载中"
-            img.src = "../img/loading-icon.gif";
+            if (img.src = "../img/more.png") {
+                img.src = "../img/loading-icon.gif";
+                p.innerHTML = "正在加载中";
+                setInterval(function() {
+                    ajax({
+                        type: 'get',
+                        url: 'http://192.168.31.254:3000/report/hot',
+                        success: function(result) {
+                            console.log(result);
+                            let arr7 = result.slice(0, 16);
+                            let arr8 = [...arr7, ...arr7, ...arr7, ...arr7, ]
+                            var tmpText = doT.template(document.querySelector("#li_tmpl-lb2").innerText);
+                            document.querySelector("#ul8").innerHTML = tmpText(arr7)
+                        }
+                    })
+                    img.src = "";
+                    p.innerHTML = "没啦没啦~";
+                }, 2000)
+
+            }
+
+        }
+        document.querySelector(".go_top").onclick = function() {
+
+            let timer = setInterval(function() {
+                // 当前位置
+                let sTop = document.documentElement.scrollTop;
+
+                // 步长
+                let step = Math.ceil(sTop / 10);
+
+                // console.log(sTop);
+                // console.log(step)
+                if (sTop != 0) {
+                    document.documentElement.scrollTop = sTop - step;
+                } else {
+                    clearInterval(timer)
+                }
+            }, 50)
+
+            // document.documentElement.scrollTop = 0;
         }
     </script>
 

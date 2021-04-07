@@ -534,6 +534,13 @@ footer {
   font-size: 13px;
   color: #a3a3a3;
   clear: both;
+  position: relative;
+}
+footer .go_top {
+  position: absolute;
+  right: 100px;
+  bottom: 100px;
+  cursor: pointer;
 }
 footer a {
   color: #a3a3a3;
