@@ -1,0 +1,67 @@
+.report_box {
+  width: 100%;
+  background: #f7f7f7;
+  padding: 20px 0;
+}
+.report_box .w {
+  width: 1000px;
+  margin: 0 auto;
+  padding: 20px 0;
+  background: white;
+  border-radius: 7px;
+  border: 1px solid #e1dfdf;
+}
+.report_box .w .title {
+  height: 25px;
+  padding-left: 6px;
+  font-size: 18px;
+  border-left: 6px solid red;
+  margin-bottom: 80px;
+}
+.report_box .w .inp {
+  width: 400px;
+  margin: 0 auto;
+}
+.report_box .w .inp p {
+  margin-bottom: 30px;
+}
+.report_box .w .inp p input {
+  width: 390px;
+  height: 50px;
+  border: 0;
+  outline: none;
+  background: #f7f7f7;
+  border-radius: 6px;
+  padding-left: 10px;
+}
+.report_box .w .inp > p:nth-of-type(2) input {
+  width: 245px;
+}
+.report_box .w .inp > p:nth-of-type(2) img {
+  margin-left: 5px;
+}
+.report_box .w .inp > p:nth-of-type(3) input {
+  width: 245px;
+}
+.report_box .w .inp > p:nth-of-type(3) .getCode {
+  display: inline-block;
+  width: 125px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  color: #666;
+  margin-left: 10px;
+  border: 2px solid #b6b5b5;
+  border-radius: 10px;
+  vertical-align: middle;
+}
+.report_box .w .inp button {
+  width: 400px;
+  height: 50px;
+  border-radius: 7px;
+  background: #fe5341;
+  border: none;
+  color: white;
+  font-size: 20px;
+  margin-bottom: 100px;
+}

@@ -123,6 +123,7 @@ main .section2 .wrapper {
   background: #fff;
   border-radius: 5px;
   padding-bottom: 30px;
+  margin-bottom: 30px;
 }
 main .section2 .wrapper .wrapper-top {
   margin-bottom: 10px ;
@@ -145,8 +146,66 @@ main .section2 .wrapper .wrapper-top ul li p {
   margin: 10px 0;
 }
 main .section2 .wrapper .wrapper-bottom div {
-  width: 135px;
+  float: left;
+  width: 145px;
   text-align: center;
   font-size: 14px;
   color: #888;
+  padding: 5px 0;
+}
+footer {
+  width: 100%;
+  background: #505050;
+  font-size: 13px;
+  color: #a3a3a3;
+  clear: both;
+}
+footer a {
+  color: #a3a3a3;
+}
+footer a:hover {
+  color: coral;
+}
+footer .footer-box {
+  padding-top: 50px;
+}
+footer .footer-box .footer-img {
+  float: left;
+}
+footer .footer-box .footer-img1 {
+  margin-left: 15px;
+  float: left;
+  width: 130px;
+}
+footer .footer-box .footer-img1 div {
+  margin: 25px 0;
+}
+footer .footer-box .footer-img1 div p {
+  margin: 5px 0;
+}
+footer .footer-box dl {
+  float: left;
+  margin-left: 30px;
+}
+footer .footer-box dl dt {
+  font-size: 16px;
+  color: #F9F9F9;
+  font-family: 黑体;
+}
+footer .footer-box dl dd {
+  line-height: 1.5em;
+}
+footer .footer-box dl dd:first-of-type {
+  margin-top: 30px;
+}
+footer .footer-box dl div {
+  float: left;
+}
+footer .footer-box dl div:last-of-type {
+  margin-left: 15px;
+}
+footer .footer-bottom {
+  text-align: center;
+  line-height: 30px;
+  margin-top: 70px;
 }
