@@ -1,0 +1,271 @@
+<!--
+ * @Author: SXX
+ * @Date: 2021-04-06 21:33:10
+ * @LastEditors: SXX
+ * @LastEditTime: 2021-04-07 09:39:40
+ * @Description: file content
+ * @FilePath: \极果\shiyong\shiyong.html
+-->
+<!--
+ * @Author: SXX
+ * @Date: 2021-04-02 10:11:06
+ * @LastEditors: SXX
+ * @LastEditTime: 2021-04-06 20:56:59
+ * @Description: file content
+ * @FilePath: \极果\user\report.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../font/iconfont.css">
+    <link rel="stylesheet" href="../css/shiyong.css">
+    <link rel="stylesheet" href="../css/base.css">
+</head>
+
+<body>
+    <!-- 头部导航开始 -->
+    <header>
+        <div class="nav wrapper clearfix">
+            <div class="img">
+                <img src="../img/logonew.png" alt="">
+            </div>
+            <ul>
+                <li>
+                    <div class="box">
+                        <a href="#" class="top ">首页</a>
+                        <a href="../user/index.html" class="bottom">首页</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="box">
+                        <a href="#" class="top">酷玩</a>
+                        <a href="../play/play_new.html" class="bottom">酷玩</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="box">
+                        <a href="#" class="top top1">导购</a>
+                        <a href="../shiyong/shiyong.html" class="bottom">导购</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="box">
+                        <a href="#" class="top">试用</a>
+                        <a href="../user/help.html" class="bottom">试用</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="box">
+                        <a href="#" class="top ">报告</a>
+                        <a href="../user/report.html" class="bottom">报告</a>
+                    </div>
+                </li>
+            </ul>
+            <div class="zhuce">
+                <button>
+                    <a href="#">注册</a>
+                </button>
+                <span class="iconfont"><a href="#">&#xe618;</a></span>
+            </div>
+        </div>
+    </header>
+    <!-- 头部结束结束 -->
+    <!-- 内容开始 -->
+    <main>
+        <section class="section1">
+            <div class="wrapper">
+                <div class="text">
+                    <p>导购清单</p>
+                </div>
+                <div class="text2">
+                    <span class="btn1 active">
+                    <a href="../shiyong/shiyong.html">最新</a>
+                    </span>
+                    <span class="btn2  ">
+                    <a href="../shiyong/shiyong2.html">最热</a>
+                </span>
+                </div>
+            </div>
+        </section>
+        <section class="section2" style="height: 1250px;">
+            <div class="wrapper">
+                <div class="guide">
+                    <ul id="ul5">
+                        <!-- <li>
+                            <a href="#">
+                                <img src="../img/g1.jpg" alt="">
+                                <p>花万元把蜗居秒变“豪宅”？这12件家具就能帮你办到</p>
+                                <div class="dianping">
+                                    <div class="dianzan">
+                                        <img src="../img/reply.png" alt="">
+                                        <span>3</span>
+                                    </div>
+                                    <div class="pinglun">
+                                        <img src="../img/xinRedo.png" alt="">
+                                        <img src="../img/xinRedh.png" alt="">
+                                        <span>3</span>
+                                    </div>
+                                </div>
+                                <div class="bian1"></div>
+                                <div class="bian2"></div>
+                            </a>
+                        </li> -->
+                        <script id="li_tmpl-y5" type="text/x-dot-template">
+                            <!--doT.js独有语法 -->
+                            <!-- 六 展示数据 -->
+                            <!-- 将doT.json内对应的对象名写进去 -->
+                            {{~it:value:index}}
+                            <li>
+                                <img src="{{=value.img}}" alt="">
+                                <p>{{=value.text}}</p>
+                                <div class="dianping">
+                                    <div class="dianzan">
+                                        <img src="../img/reply.png" alt="">
+                                        <span>3</span>
+                                    </div>
+                                    <div class="pinglun">
+                                        <img src="../img/xinRedo.png" alt="">
+                                        <img src="../img/xinRedh.png" alt="">
+                                        <span>3</span>
+                                    </div>
+                                </div>
+                                <div class="bian1"></div>
+                                <div class="bian2"></div>
+                            </li>
+                            {{~}}
+                        </script>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- 内容结束 -->
+    <!-- 脚注开始 -->
+    <footer class="clearfix">
+        <div class="footer-box wrapper clearfix">
+            <div class="footer-img">
+                <img src="../img/code.png" alt="">
+            </div>
+            <div class="footer-img1 clearfix">
+                <img src="../img/logoImg.jpg" alt="">
+                <div>
+                    <!-- <a href="#"> -->
+                    <p>全球酷玩试用导购平台</p>
+                    <p>酷•新奇•好玩•品质</p>
+                    <!-- </a> -->
+                </div>
+                <div>
+                    <!-- <a href="#"> -->
+                    <p>微信添加"jguojguo"</p>
+                    <p>获取我们的服务</p>
+                    <!-- </a> -->
+                </div>
+            </div>
+            <dl>
+                <dt>免费试用</dt>
+                <dd><a href="#">试用流程</a></dd>
+                <dd><a href="#">如何提高成功率</a></dd>
+            </dl>
+            <dl>
+                <dt>友情链接</dt>
+                <div>
+                    <dd>
+                        <a href="#">智东西</a>
+                    </dd>
+                    <dd>
+                        <a href="#">搜狐IT</a>
+                    </dd>
+                    <dd>
+                        <a href="#">搜狐数码</a>
+                    </dd>
+                    <dd>
+                        <a href="#">凤凰数码</a>
+                    </dd>
+                    <dd>
+                        <a href="#">泡泡网</a>
+                    </dd>
+                    <dd>
+                        <a href="#">ZUK社区</a>
+                    </dd>
+                    <dd>
+                        <a href="#">极客公园</a>
+                    </dd>
+                    <dd>
+                        <a href="#">果库</a>
+                    </dd>
+                </div>
+                <div>
+                    <dd>
+                        <a href="#">WEIBUSI</a>
+                    </dd>
+                    <dd>
+                        <a href="#">腾讯科技</a>
+                    </dd>
+                    <dd>
+                        <a href="#">凤凰科技</a>
+                    </dd>
+                    <dd>
+                        <a href="#">PConline</a>
+                    </dd>
+                    <dd>
+                        <a href="#">3W咖啡</a>
+                    </dd>
+                    <dd>
+                        <a href="#">亿觅emie</a>
+                    </dd>
+                    <dd>
+                        <a href="#">易迅易启玩</a>
+                    </dd>
+                </div>
+            </dl>
+            <dl>
+                <dt>购买攻略</dt>
+                <dd>
+                    <a href="#">美亚海淘教程</a>
+                </dd>
+                <dd>
+                    <a href="#">日亚海淘教程</a>
+                </dd>
+                <dd>
+                    <a href="#">海淘转运攻略</a>
+                </dd>
+                <dd>
+                    <a href="#">kickstarter 众筹购买攻略</a>
+                </dd>
+                <dd>
+                    <a href="#">indiegogo 众筹购买攻略</a>
+                </dd>
+            </dl>
+            <dl>
+                <dt>厂商合作</dt>
+                <dd><a href="#">关于极果</a></dd>
+                <dd>
+                    <a href="#">联系我们</a>
+                </dd>
+                <dd>
+                    <a href="#">商务合作:BD@jiguo.com</a>
+                </dd>
+                <dd>
+                    <a href="#">CEO邮箱:CEO@jiguo.com</a>
+                </dd>
+            </dl>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy;2016 极果版权所有</p>
+        </div>
+    </footer>
+    <!-- 脚注结束 -->
+    <script src="../js/ajax.js"></script>
+    <script src="../js/doT.min.js"></script>
+    <script src="../js/daogou.js"></script>
+
+
+
+</body>
+
+</html>
