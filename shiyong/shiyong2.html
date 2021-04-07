@@ -2,7 +2,7 @@
  * @Author: SXX
  * @Date: 2021-04-06 22:06:41
  * @LastEditors: SXX
- * @LastEditTime: 2021-04-06 22:07:35
+ * @LastEditTime: 2021-04-07 09:40:03
  * @Description: file content
  * @FilePath: \极果\shiyong\shiyong2.html
 -->
@@ -100,14 +100,18 @@
                 </div>
             </div>
         </section>
-        <section class="section2">
+        <section class="section2" style="height: 1250px;">
             <div class="wrapper">
                 <div class="guide">
                     <ul id="ul5">
-                        <!-- <li>
-                            <a href="#">
-                                <img src="../img/g1.jpg" alt="">
-                                <p>花万元把蜗居秒变“豪宅”？这12件家具就能帮你办到</p>
+                        <script id="li_tmpl-y5" type="text/x-dot-template">
+                            <!--doT.js独有语法 -->
+                            <!-- 六 展示数据 -->
+                            <!-- 将doT.json内对应的对象名写进去 -->
+                            {{~it:value:index}}
+                            <li>
+                                <img src="{{=value.img}}" alt="">
+                                <p>{{=value.text}}</p>
                                 <div class="dianping">
                                     <div class="dianzan">
                                         <img src="../img/reply.png" alt="">
@@ -121,31 +125,6 @@
                                 </div>
                                 <div class="bian1"></div>
                                 <div class="bian2"></div>
-                            </a>
-                        </li> -->
-                        <script id="li_tmpl-y5" type="text/x-dot-template">
-                            <!--doT.js独有语法 -->
-                            <!-- 六 展示数据 -->
-                            <!-- 将doT.json内对应的对象名写进去 -->
-                            {{~it:value:index}}
-                            <li>
-                                <a href="../user/report2.html">
-                                    <img src="{{=value.img}}" alt="">
-                                    <p>{{=value.text}}</p>
-                                    <div class="dianping">
-                                        <div class="dianzan">
-                                            <img src="../img/reply.png" alt="">
-                                            <span>3</span>
-                                        </div>
-                                        <div class="pinglun">
-                                            <img src="../img/xinRedo.png" alt="">
-                                            <img src="../img/xinRedh.png" alt="">
-                                            <span>3</span>
-                                        </div>
-                                    </div>
-                                    <div class="bian1"></div>
-                                    <div class="bian2"></div>
-                                </a>
                             </li>
                             {{~}}
                         </script>

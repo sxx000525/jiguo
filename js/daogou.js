@@ -2,7 +2,7 @@
  * @Author: SXX
  * @Date: 2021-04-06 17:05:23
  * @LastEditors: SXX
- * @LastEditTime: 2021-04-06 21:58:51
+ * @LastEditTime: 2021-04-07 09:22:25
  * @Description: file content
  * @FilePath: \极果\js\daogou.js
  */
@@ -77,5 +77,27 @@ ajax({
         let arr14 = [...arr13, ...arr13, ...arr13, ...arr13, ]
         var tmpText = doT.template(document.querySelector("#li_tmpl-y5").innerText);
         document.querySelector("#ul5").innerHTML = tmpText(arr13)
+    }
+})
+ajax({
+    type: 'get',
+    url: 'http://192.168.31.254:3000/useing/public',
+    success: function(result) {
+        console.log(result);
+        let arr15 = result.slice(0, 12);
+        let arr16 = [...arr15, ...arr15, ...arr15, ...arr15, ]
+        var tmpText = doT.template(document.querySelector("#li_tmpl-y6").innerText);
+        document.querySelector("#ul6").innerHTML = tmpText(arr15)
+    }
+})
+ajax({
+    type: 'get',
+    url: 'http://192.168.31.254:3000/useing/master',
+    success: function(result) {
+        console.log(result);
+        let arr17 = result.slice(0, 12);
+        let arr18 = [...arr17, ...arr17, ...arr17, ...arr17, ]
+        var tmpText = doT.template(document.querySelector("#li_tmpl-y7").innerText);
+        document.querySelector("#ul7").innerHTML = tmpText(arr17)
     }
 })

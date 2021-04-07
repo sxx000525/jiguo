@@ -5,7 +5,7 @@ main {
     .header_nav {
         width: 100%;
         background: #fff;
-
+border-top: 2px solid #ccc;
 
         //  导航
         .nav {
@@ -16,19 +16,35 @@ main {
             border-bottom: 1px solid #c9c9c9;
 
             h1 {
-                font-weight: 200;
-                font-size: 36px;
-                margin: 15px;
+                font-weight: 500;
+                font-size: 45px;
+              padding: 30px 0 20px;
             }
             span{
                 display: inline-block;
-                padding: 10px;
-               color: #999;
+                // padding: 10px;
+                width: 150px;
+                height: 40px;
+                line-height: 40px;
+                color: #999;
+                font-size: 20px;
+               &.active{
+                border-bottom:3px solid red ;
+                color: #f33a34;
+                a{
+                    color: #f33a34;
+                    
+                }
+           }
+           a{
+            color: #3a3a3a;
+            &:hover{
+                color: #ff6700;
             }
-            .active{
-                 border-bottom:4px solid red ;
-                 color: #f33a34;
+        }
+              
             }
+          
         }
 
         // 子导航
@@ -46,11 +62,18 @@ main {
                     padding: 0 60px;
                     line-height: 50px;
                     color: rgb(171, 171, 171);
+                    &.active {
+                        color: black;
+                        a{
+                            color: black;
+                        }
+                    }
+                    a{
+                        color: #888;
+                    }
                 }
 
-                .active {
-                    color: black;
-                }
+               
             }
         }
     }
@@ -68,38 +91,58 @@ main {
 
             ul {
                 display: flex;
-                justify-content: space-between;
+                justify-content: flex-start;
                 flex-wrap: wrap;
-
+                width: 100%;
+             
                 li {
-                    width: 220px;
+                    width: 230px;
                     height: 290px;
-                    margin: 25px 0 35px;
+                    margin: 25px 10px 13px;
                     // border: 1px solid red;
                     border-radius: 6px;
                     position: relative;
-                    background: white;
-
+                    background: white; 
                     img {
                         width: 100%;
+                        height: 135px;
                         border-radius: 6px 6px 0 0;
+                        &:hover{
+                            transition: all .5s;
+                            animation: imgMove .8s infinite linear;
+                        }
                     }
-
+                    @keyframes imgMove {
+                         0%{
+                            opacity: 1;
+                        }
+                        50%{
+                            opacity: .5;
+                        }
+                        100%{
+                            opacity: 1;
+                        }
+                    }
                     // 标题
                     p {
                         padding: 5px;
                         margin-bottom: 5px;
-                        font-size: 16px;
-                        font-weight: 700;
+                        font-size: 14px;
+                      
                     }
 
                     // 人数
+                    .weizhi{
+                        position: absolute;
+                        bottom: 8px;
+                        left: 50%;
+                        transform: translateX(-50%);
                     .shu {
                         display: inline-block;
                         width: 48px;
                         height: 25px;
-                        border: 1px solid #c9c9c9;
-                        color: #c9c9c9;
+                        color: #f00;
+                        border: 1px solid #f00;
                         border-radius: 5px;
                     }
 
@@ -107,12 +150,11 @@ main {
                         display: inline-block;
                         width: 48px;
                         height: 25px;
-                        border: 1px solid #c9c9c9;
-                        margin-right: 13px;
+                        margin-right: 10px;
                     }
 
                     div {
-                        margin: 12px 0;
+                        margin: 8px 0;
 
                         span {
                             color: red;
@@ -120,9 +162,9 @@ main {
                     }
 
                     .number {
-                        color: #c9c9c9;
+                        color: #f00;
                     }
-
+                }
                     .firstIssue {
                         position: absolute;
                         top: 0;
@@ -134,7 +176,33 @@ main {
                         color: #fff;
                         background: rgb(255, 73, 73);
                         border-radius: 0 6px 0 6px;
-
+                        padding: 0 5px;
+                    }
+                }
+                li:nth-of-type(3n-1){
+                    .shu {
+                        display: inline-block;
+                        width: 48px;
+                        height: 25px;
+                        color: green;
+                        border: 1px solid green;
+                        border-radius: 5px;
+                    }
+                    .number {
+                        color: green;
+                    }
+                    .firstIssue {
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        // width: 40px;
+                        height: 22px;
+                        line-height: 22px;
+                        font-size: 14px;
+                        color: #fff;
+                        background: #ccc79e;
+                        border-radius: 0 6px 0 6px;
+                        padding: 0 5px;
                     }
                 }
             }

@@ -4,6 +4,7 @@ main {
 main .header_nav {
   width: 100%;
   background: #fff;
+  border-top: 2px solid #ccc;
 }
 main .header_nav .nav {
   margin: 0 auto;
@@ -11,18 +12,30 @@ main .header_nav .nav {
   border-bottom: 1px solid #c9c9c9;
 }
 main .header_nav .nav h1 {
-  font-weight: 200;
-  font-size: 36px;
-  margin: 15px;
+  font-weight: 500;
+  font-size: 45px;
+  padding: 30px 0 20px;
 }
 main .header_nav .nav span {
   display: inline-block;
-  padding: 10px;
+  width: 150px;
+  height: 40px;
+  line-height: 40px;
   color: #999;
+  font-size: 20px;
 }
-main .header_nav .nav .active {
-  border-bottom: 4px solid red ;
+main .header_nav .nav span.active {
+  border-bottom: 3px solid red ;
   color: #f33a34;
+}
+main .header_nav .nav span.active a {
+  color: #f33a34;
+}
+main .header_nav .nav span a {
+  color: #3a3a3a;
+}
+main .header_nav .nav span a:hover {
+  color: #ff6700;
 }
 main .header_nav .subnav {
   margin: 0 auto;
@@ -37,8 +50,14 @@ main .header_nav .subnav ul li {
   line-height: 50px;
   color: #ababab;
 }
-main .header_nav .subnav ul .active {
+main .header_nav .subnav ul li.active {
   color: black;
+}
+main .header_nav .subnav ul li.active a {
+  color: black;
+}
+main .header_nav .subnav ul li a {
+  color: #888;
 }
 main .shangpin .nav_shop_all {
   width: 1000px;
@@ -47,50 +66,71 @@ main .shangpin .nav_shop_all {
 }
 main .shangpin .nav_shop_all ul {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   flex-wrap: wrap;
+  width: 100%;
 }
 main .shangpin .nav_shop_all ul li {
-  width: 220px;
+  width: 230px;
   height: 290px;
-  margin: 25px 0 35px;
+  margin: 25px 10px 13px;
   border-radius: 6px;
   position: relative;
   background: white;
 }
 main .shangpin .nav_shop_all ul li img {
   width: 100%;
+  height: 135px;
   border-radius: 6px 6px 0 0;
+}
+main .shangpin .nav_shop_all ul li img:hover {
+  transition: all 0.5s;
+  animation: imgMove 0.8s infinite linear;
+}
+@keyframes imgMove {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 main .shangpin .nav_shop_all ul li p {
   padding: 5px;
   margin-bottom: 5px;
-  font-size: 16px;
-  font-weight: 700;
+  font-size: 14px;
 }
-main .shangpin .nav_shop_all ul li .shu {
+main .shangpin .nav_shop_all ul li .weizhi {
+  position: absolute;
+  bottom: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+main .shangpin .nav_shop_all ul li .weizhi .shu {
   display: inline-block;
   width: 48px;
   height: 25px;
-  border: 1px solid #c9c9c9;
-  color: #c9c9c9;
+  color: #f00;
+  border: 1px solid #f00;
   border-radius: 5px;
 }
-main .shangpin .nav_shop_all ul li .ren {
+main .shangpin .nav_shop_all ul li .weizhi .ren {
   display: inline-block;
   width: 48px;
   height: 25px;
-  border: 1px solid #c9c9c9;
-  margin-right: 13px;
+  margin-right: 10px;
 }
-main .shangpin .nav_shop_all ul li div {
-  margin: 12px 0;
+main .shangpin .nav_shop_all ul li .weizhi div {
+  margin: 8px 0;
 }
-main .shangpin .nav_shop_all ul li div span {
+main .shangpin .nav_shop_all ul li .weizhi div span {
   color: red;
 }
-main .shangpin .nav_shop_all ul li .number {
-  color: #c9c9c9;
+main .shangpin .nav_shop_all ul li .weizhi .number {
+  color: #f00;
 }
 main .shangpin .nav_shop_all ul li .firstIssue {
   position: absolute;
@@ -102,6 +142,30 @@ main .shangpin .nav_shop_all ul li .firstIssue {
   color: #fff;
   background: #ff4949;
   border-radius: 0 6px 0 6px;
+  padding: 0 5px;
+}
+main .shangpin .nav_shop_all ul li:nth-of-type(3n-1) .shu {
+  display: inline-block;
+  width: 48px;
+  height: 25px;
+  color: green;
+  border: 1px solid green;
+  border-radius: 5px;
+}
+main .shangpin .nav_shop_all ul li:nth-of-type(3n-1) .number {
+  color: green;
+}
+main .shangpin .nav_shop_all ul li:nth-of-type(3n-1) .firstIssue {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 22px;
+  line-height: 22px;
+  font-size: 14px;
+  color: #fff;
+  background: #ccc79e;
+  border-radius: 0 6px 0 6px;
+  padding: 0 5px;
 }
 main .shangpin .nav_shop_apply {
   display: none;

@@ -237,6 +237,21 @@ main .index_report .w ul li img {
   width: 100%;
   height: 129px;
 }
+main .index_report .w ul li img:hover {
+  transform: all 0.5s;
+  animation: imgMove 0.8s infinite linear;
+}
+@keyframes imgMove {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 main .index_report .w ul li p {
   padding: 5px;
   margin-bottom: 5px;
@@ -299,6 +314,8 @@ main .index_guide .w {
   margin: 0 auto;
 }
 main .index_guide .w h2 {
+  float: left;
+  width: 300px;
   margin: 25px 0 25px 15px;
 }
 main .index_guide .w ul {
@@ -424,6 +441,21 @@ main .index_kuwan .w ul li {
 main .index_kuwan .w ul li img {
   width: 100%;
   border-radius: 7px 7px 0 0;
+}
+main .index_kuwan .w ul li img:hover {
+  transform: all 0.5s;
+  animation: imgMove 0.8s infinite linear;
+}
+@keyframes imgMove {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 main .index_kuwan .w ul li h3 {
   margin-left: 6px;
